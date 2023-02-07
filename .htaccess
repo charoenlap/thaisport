@@ -1,0 +1,8 @@
+RewriteEngine On 
+
+RewriteCond %{HTTPS_HOST} ^gosport\.world [NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://gosport.world/$1 [R,L]
+
+RewriteRule ^request_callback(.*)$ /index.php?route=scb/callback [L,QSA]
+RewriteRule ^request_qr(.*)$ /index.php?route=qr [L,QSA]

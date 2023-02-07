@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gosport Live Streaming</title>
+    <style>
+        html, body {padding: 0;  margin: 0;  height: 100%; }
+        .wrapper{
+            padding: 0;  margin: 0;  height: 96%;
+        }
+        .player{
+            padding: 0; margin: 0;
+        }
+        .title{
+            padding: 0; margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+      <div id="player"></div>
+
+  </div>
+
+
+  <script src="script/liveplayer.js"></script>
+
+  <script>
+      LivePlayer.load ([
+      {
+            "file": "wss://streaming01.gosport.world:3334/gosportlive/gosport_live03",
+            "type": "webrtc",
+            "label": "HD",
+            "default": "true",
+      }
+      ]);
+  </script>
+
+</body>
+</html>
+
