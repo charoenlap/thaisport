@@ -20,7 +20,7 @@
 				);
 			}
 	    	$data['event'] = $this->model('master')->getNearEvent();
-	    	$data['highlight'] = $this->model('master')->getHighlight(" limit 0,3");
+	    	$data['highlight'] = array();//$this->model('master')->getHighlight(" limit 0,3");
  	    	$this->view('home',$data); 
 	    }
 	    public function highlight() {
@@ -28,7 +28,7 @@
 	    	$data['title'] = "";
 	    	$data['descreption'] = "";
 	    	
-	    	$data['highlight'] = $this->model('master')->getHighlight();
+	    	$data['highlight'] = array();//$this->model('master')->getHighlight();
  	    	$this->view('highlight',$data); 
 	    }
 	    public function live() {
@@ -36,7 +36,7 @@
 	    	$data['title'] = "";
 	    	$data['descreption'] = "";
 	    	
-	    	// $data['live'] = $this->model('master')->getHighlight();
+	    	// $data['live'] = array();//$this->model('master')->getHighlight();
  	    	$this->view('live',$data); 
 	    }
 	    public function timeline() {
@@ -44,7 +44,7 @@
 	    	$data['title'] = "";
 	    	$data['descreption'] = "";
 	    	
-	    	// $data['timeline'] = $this->model('master')->getHighlight();
+	    	// $data['timeline'] = array();//$this->model('master')->getHighlight();
  	    	$this->view('timeline',$data); 
 	    }
 	    public function page() {
