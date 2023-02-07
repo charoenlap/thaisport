@@ -16,9 +16,9 @@
 		require_once('/Users/charoenlapanatamsombat/Documents/htdocs/terdthai/public_html/catalog/setup.php'); 
 		require_once('/Users/charoenlapanatamsombat/Documents/htdocs/terdthai/lib/system/loader/autoload.php'); 
 	}else{
-		require_once($_SERVER['DOCUMENT_ROOT'].'/config/domains/thaisport/config.php'); 
-		require_once($_SERVER['DOCUMENT_ROOT'].'/lib/function/main_function.php');
+		require_once('/home/thaisport/domains/thaisport-stadium.com/config/domains/thaisport/config.php'); 
+		require_once('/home/thaisport/domains/thaisport-stadium.com/lib/function/main_function.php');
 		require_once('catalog/setup.php'); 
-		require_once($_SERVER['DOCUMENT_ROOT'].'/lib/system/loader/autoload.php'); 
+		require_once('/home/thaisport/domains/thaisport-stadium.com/lib/system/loader/autoload.php'); 
 	}
 ?>
