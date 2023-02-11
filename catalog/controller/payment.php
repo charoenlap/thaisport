@@ -3,6 +3,7 @@
 		public function index() {
 			// exit();
 	    	$data = array();
+	    	/*
 	    	$id_user = $this->getSession('id_user');
 	    	$data['title'] = "";
 	    	$data['descreption'] = "";
@@ -165,6 +166,7 @@
 		    $data['id_content'] = get('id_content');
 	    	
 	    	// var_dump($data['detail']);exit();
+	    	*/
  	    	$this->view('payment',$data); 
 	    }
 	    public function confirm() {

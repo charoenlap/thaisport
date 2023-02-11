@@ -12096,8 +12096,8 @@ label.error {
 }
 
 .footer-wrapper {
-  margin-top: 100px;
-  padding: 100px 0 10px;
+  margin-top: 50px;
+  padding: 0px 0 10px;
   background-color: #111;
 }
 @media only screen and (max-width: 768px) {
@@ -12200,7 +12200,7 @@ label.error {
 }
 .footer-wrapper .middle-footer {
   padding-top: 75px;
-  margin-top: 75px;
+  margin-top: 5px;
   border-top: 1px #333 solid;
 }
 @media only screen and (max-width: 768px) {
@@ -13922,7 +13922,7 @@ body {
 }
 
 .search-wrapper {
-  padding: 100px;
+  padding: 30px;
   background-color: #f5f5f5;
   border-radius: 10px;
 }
