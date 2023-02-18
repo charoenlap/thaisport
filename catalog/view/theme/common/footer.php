@@ -4,14 +4,14 @@
                 <div class="col-sm-12">
                     <div class="middle-footer">
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-3">
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
                                 <h5>Social Link</h5>
                                 <ul>
                                     <li><a href="https://lin.ee/xi2HWrQ">Line</a></li>
                                     <li><a href="#">Facebook</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-3">
+                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
                                 <h5>หน้าอื่นๆ</h5>
                                 <ul>
                                     <li><a href="<?php echo route('home/blogDetail');?>">เกี่ยวกับเรา</a></li>
