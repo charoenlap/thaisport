@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-sm-12">
-                    <img src="assets/images/s5.jpg" alt="image">
+                    <div class="text-center"><img src="assets/images/s5.jpg" alt="image"></div>
                 </div>
             </div>
             <div class="row justify-content-center">

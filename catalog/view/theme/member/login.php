@@ -1,21 +1,4 @@
-<header class="ct-page-header ct-u-scratches--bottom ct-u-scratches--inner ct-u-background--black">
-    <div class="inner">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h1 class="ct-page-header__title">เข้าสู่ระบบ</h1>
-                </div>
-                <div class="col-sm-8">
-                    <ul class="breadcrumb">
-                        <li><a href="<?php echo route('home');?>">หน้าหลัก</a>
-                        </li>
-                        <li>เข้าสู่ระบบ</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+
 <main>
     <section class="ct-u-scratches--top ct-u-padding-both-50">
         <div class="ct-u-padding-top-50 hidden-xs"></div>
@@ -23,7 +6,7 @@
             <div class="row">
                 <div class="col-md-3">&nbsp;</div>
                 <div class="col-md-6">
-                    <h3 class="ct-u-padding-bottom-30">เข้าสู่ระบบ</h3>
+                    <h2 class="ct-u-padding-bottom-30">เข้าสู่ระบบ</h2>
                     <?php if($detail){?>
                         <p class="alert alert-danger"><?php echo $detail;?></p>
                     <?php } ?>
@@ -40,12 +23,12 @@
                             <label for="name" class="sr-only">รหัสผ่าน</label>
                         </div>
                         <div class="row">
-                            <div class="col-xs-6 col-md-6">
+                            <!-- <div class="col-xs-6 col-md-6">
                                 <a href="<?php echo route('member/register'.($id_content?'&id_content'.$id_content:''));?>" class="btn btn-motive">สมัครสมาชิก</a>
                                 <a href="<?php echo route('member/forgot');?>" class="btn ">ลืมรหัสผ่าน</a>
-                            </div>
-                            <div class="col-xs-6 col-md-6 text-right">
-                                <button type="submit" class="btn btn-motive">เข้าสู่ระบบ</button>
+                            </div> -->
+                            <div class="col-xs-12 col-md-12 text-right">
+                                <button type="submit" class="btn btn-motive btn-primary btn-block">เข้าสู่ระบบ</button>
                             </div>
                         </div>
                         <div class="row" style="margin-top:10px;">

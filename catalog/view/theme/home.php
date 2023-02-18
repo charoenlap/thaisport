@@ -3,14 +3,10 @@
     <div class="main-wrapper">
         <div class="banner-wrapper">
             <div class="container">
-                <div class="row mb-2 mt-2">
-                    <div class="col-sm-12">
-                        <marquee behavior="" direction="">วันเวลาของเซิฟเวอร์ <?php echo date('Y-m-d H:i:s');?> สนามกีฬาไก่ชนเทิดไท</marquee>
-                    </div>
-                </div>
+                
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="banner-slider owl-carousel owl-theme">
+                        <div class="banner-slider owl-carousel owl-theme mt-4">
                             <div class="owl-items">
                                 <div class="banner-wrap justify-content-between align-items-center">
                                     <div class="left-wrap">
@@ -72,6 +68,11 @@
                                 </div>
                             </div> -->
                         </div>
+                    </div>
+                </div>
+                <div class="row mb-2 mt-2">
+                    <div class="col-sm-12">
+                        <marquee behavior="" direction="">วันเวลาของเซิฟเวอร์ <?php echo date('Y-m-d H:i:s');?> สนามกีฬาไก่ชนเทิดไท</marquee>
                     </div>
                 </div>
             </div>

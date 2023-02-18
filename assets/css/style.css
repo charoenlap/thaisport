@@ -23,6 +23,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import "./../vendor/owl-carousel/css/owl.carousel.min.css";
 @import "./../vendor/owl-carousel/css/owl.theme.default.css";
+marquee {
+  color:#c41425;
+}
+input[type^='text'].form-control,input[type^='password'].form-control {
+  border:solid 1px #c41425;
+}
+.btn-primary {
+  border:solid 1px #c41425;
+  background-color:#c41425 !important;
+  border-color: #c41425 !important;
+}
 .theme-dark {
   background-color: #1a2236;
 }
@@ -564,7 +575,7 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-weight: 400;
   line-height: 1.2;
-  color: #111;
+  color: #c41425;
 }
 
 h1, .h1 {
@@ -6239,7 +6250,7 @@ a.close.disabled {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
-  color: #111;
+  color: #c41425;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
   border-top-left-radius: calc(0.3rem - 1px);
@@ -11566,7 +11577,7 @@ label.error {
   margin-bottom: 10px;
 }
 .form-hero p {
-  color: #999;
+  color: #ffffff;
   font-size: 14px;
   line-height: 28px;
   padding: 0 20px;
@@ -11921,7 +11932,10 @@ label.error {
   display: none;
 }
 .header-wrapper .logo img {
-  max-height: 40px;
+      height: 80px;
+    position: absolute;
+    z-index: 99;
+    top: -25px;
 }
 .header-wrapper .logo i {
   margin-right: 0px;
@@ -11945,7 +11959,7 @@ label.error {
 .header-wrapper .nav-menu {
   display: inline-block;
   float: left;
-  margin-left: 40px;
+  margin-left: 80px;
   margin-top: 3px;
 }
 @media only screen and (max-width: 992px) {
@@ -11979,7 +11993,7 @@ label.error {
   }
 }
 .header-wrapper .nav-menu.style2 li a {
-  color: #111;
+  color: #c41425;
   font-size: 15px;
 }
 .header-wrapper .nav-menu.style2 li {
@@ -12018,7 +12032,7 @@ label.error {
   width: 100%;
   padding: 0 15px;
   font-size: 14px;
-  color: #999;
+  color: #ffffff;
 }
 .header-wrapper .user-avater {
   position: relative;
@@ -12086,7 +12100,7 @@ label.error {
   display: block;
   font-weight: 400;
   color: #888;
-  padding: 10px 15px;
+  padding: 10px;
   font-size: 14px;
 }
 .header-wrapper .user-menu a i {
@@ -12098,7 +12112,7 @@ label.error {
 .footer-wrapper {
   margin-top: 50px;
   padding: 0px 0 10px;
-  background-color: #111;
+  background-color: #c41425;
 }
 @media only screen and (max-width: 768px) {
   .footer-wrapper {
@@ -12175,7 +12189,7 @@ label.error {
   margin-top: 20px;
 }
 .footer-wrapper p {
-  color: #999;
+  color: #ffffff;
   width: 60%;
   font-size: 13px;
 }
@@ -12194,7 +12208,7 @@ label.error {
   margin-top: 20px;
 }
 .footer-wrapper ul li a {
-  color: #999;
+  color: #ffffff;
   font-size: 12px;
   line-height: 24px;
 }
@@ -12249,7 +12263,7 @@ label.error {
   float: left;
   width: 100%;
   position: relative;
-  background-color: #211813;
+  background-color: #c41425;
   height: 420px;
   display: flex;
   flex-wrap: wrap;
@@ -12286,7 +12300,7 @@ label.error {
     left: 0;
     z-index: 3;
     width: 100%;
-    background: linear-gradient(to top, #211813, transparent);
+    background: linear-gradient(to top, #c41425, transparent);
   }
 }
 .banner-wrapper .left-wrap h2 {
@@ -12362,7 +12376,8 @@ label.error {
 }
 .banner-wrapper .left-wrap .btn-lg, .banner-wrapper .left-wrap .btn-group-lg > .btn {
   color: #fff;
-  background-color: var(--f7-theme-color);
+  background-color: #c41425;
+  border: solid 1px #fff;
   min-width: 200px;
   line-height: 40px;
   font-size: 13px;
@@ -12418,7 +12433,7 @@ label.error {
   padding: 5px 10px;
 }
 .banner-wrapper .left-wrap .icon-bttn .share-icons i {
-  color: #999;
+  color: #ffffff;
   margin-right: 15px;
   font-size: 22px;
 }
@@ -12442,7 +12457,7 @@ label.error {
   top: 0;
   width: 60%;
   height: 100%;
-  /*background: linear-gradient(to right, #211813, transparent);*/
+  /*background: linear-gradient(to right, #c41425, transparent);*/
 }
 .banner-wrapper .right-wrap video {
   height: 500px;
@@ -12454,7 +12469,7 @@ label.error {
 }
 .banner-wrapper .slide-wrapper {
   padding: 0 50px 30px;
-  background-color: #211813;
+  background-color: #c41425;
   border-radius: 0 0 7px 7px;
   position: relative;
 }
@@ -12465,7 +12480,7 @@ label.error {
   top: -50px;
   width: 100%;
   height: 50px;
-  background: linear-gradient(to top, #211813, transparent);
+  background: linear-gradient(to top, #c41425, transparent);
 }
 
 .slide-wrapper h2 {
@@ -12493,7 +12508,7 @@ label.error {
   border-radius: 6px;
   overflow: hidden;
   position: relative;
-  background-color: #211813;
+  background-color: #c41425;
   display: block;
   width: 100%;
 }
@@ -12563,7 +12578,7 @@ label.error {
   bottom: 0;
   width: 100%;
   height: 30%;
-  background: linear-gradient(to top, #211813, transparent);
+  background: linear-gradient(to top, #c41425, transparent);
   transition: all 0.4s ease;
 }
 @media only screen and (max-width: 576px) {
@@ -12651,7 +12666,7 @@ label.error {
   bottom: 0;
   width: 100%;
   height: 50%;
-  background: linear-gradient(to top, #211813, transparent);
+  background: linear-gradient(to top, #c41425, transparent);
   transition: all 0.4s ease;
 }
 .slide-wrapper .slide-two .slide-content {
@@ -12755,7 +12770,7 @@ label.error {
 .page-nav h2 {
   font-size: 46px;
   font-weight: 700;
-  color: #111;
+  color: #c41425;
 }
 @media only screen and (max-width: 992px) {
   .page-nav h2 {
@@ -12811,7 +12826,7 @@ label.error {
 }
 .accordion .card button {
   font-size: 18px;
-  color: #111;
+  color: #c41425;
   font-weight: 500;
   padding-left: 0;
 }
@@ -12822,7 +12837,7 @@ label.error {
   font-size: 16px;
 }
 .accordion .card button.small-text a {
-  color: #111;
+  color: #c41425;
 }
 .accordion .card button i {
   font-size: 30px;
@@ -12836,7 +12851,7 @@ label.error {
 }
 .accordion .card button span {
   font-size: 11px;
-  color: #999;
+  color: #ffffff;
   font-weight: 400;
   display: block;
 }
@@ -12922,7 +12937,7 @@ label.error {
   background-color: #eee;
   border-radius: 50px;
   text-align: center;
-  color: #111;
+  color: #c41425;
   font-size: 16px;
   font-weight: 600;
   display: inline-block;
@@ -12933,7 +12948,7 @@ label.error {
   font-weight: 700;
   letter-spacing: 1px;
   font-size: 13px;
-  color: #999;
+  color: #ffffff;
   display: block;
   margin-top: 15px;
   text-transform: uppercase;
@@ -12964,7 +12979,7 @@ label.error {
 .price-wrap .left-price h2 {
   font-size: 50px;
   font-weight: 300;
-  color: #111;
+  color: #c41425;
   margin: 5px 0 0;
 }
 .price-wrap .left-price h2 i {
@@ -12976,7 +12991,7 @@ label.error {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #999;
+  color: #ffffff;
   text-transform: uppercase;
 }
 .price-wrap .middle-price {
@@ -13062,7 +13077,7 @@ label.error {
   line-height: 26px;
   font-style: italic;
   font-weight: 400;
-  color: #999;
+  color: #ffffff;
 }
 
 .form-wrapper {
@@ -13084,7 +13099,7 @@ label.error {
 .form-div h2 {
   font-size: 42px;
   font-weight: 700;
-  color: #111;
+  color: #c41425;
 }
 @media only screen and (max-width: 576px) {
   .form-div h2 {
@@ -13518,7 +13533,7 @@ label.error {
 .feedback-wrap .feedback-div .avater h6 {
   font-size: 14px;
   font-weight: 500;
-  color: #111;
+  color: #c41425;
   display: block;
   margin-top: 7px;
   margin-bottom: 5px;
@@ -13702,7 +13717,7 @@ label.error {
   margin-bottom: 5px;
   font-weight: 500;
   display: block;
-  color: #999;
+  color: #ffffff;
 }
 .service-div .map {
   width: 70px !important;
@@ -13783,7 +13798,7 @@ label.error {
 .price-table h4 {
   font-size: 17px;
   font-weight: bold;
-  color: #111;
+  color: #c41425;
   margin-bottom: 20px;
 }
 .price-table span {
@@ -13819,7 +13834,7 @@ label.error {
 .price-table .price-tab span {
   font-size: 13px;
   font-weight: 400;
-  color: #999;
+  color: #ffffff;
   line-height: 24px;
   border-radius: 3px;
 }
@@ -13947,7 +13962,7 @@ body {
 .navbar-toggler-icon {
   width: 27px;
   height: 2px;
-  background-color: #999;
+  background-color: #ffffff;
   position: relative;
   top: -2px;
 }
@@ -13955,7 +13970,7 @@ body {
   content: "";
   width: 27px;
   height: 2px;
-  background-color: #999;
+  background-color: #ffffff;
   position: absolute;
   top: -8px;
   left: 0;
@@ -13964,7 +13979,7 @@ body {
   content: "";
   width: 27px;
   height: 2px;
-  background-color: #999;
+  background-color: #ffffff;
   position: absolute;
   bottom: -8px;
   left: 0;
