@@ -25,6 +25,7 @@
 @import "./../vendor/owl-carousel/css/owl.theme.default.css";
 marquee {
   color:#c41425;
+  border-bottom:solid 1px #c41425;
 }
 input[type^='text'].form-control,input[type^='password'].form-control {
   border:solid 1px #c41425;
@@ -12236,7 +12237,8 @@ label.error {
   }
   .nav-link.mobile {
     display:block;
-    color:#c41425;
+    color:#3e3e3e;
+    padding: 6px 0px;
   }
 }
 .footer-wrapper .lower-footer {

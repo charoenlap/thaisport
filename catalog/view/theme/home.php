@@ -82,7 +82,7 @@
         <div class="slide-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 text-left mb-4 mt-4">
+                    <div class="col-sm-6 text-left mb-4">
                         <h2>ข่าวสาร</h2>
                     </div>
                 </div>

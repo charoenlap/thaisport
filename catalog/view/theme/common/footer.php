@@ -2,7 +2,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="">
+                    <div class="pt-4">
                         <div class="row">
                             <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
                                 <h5 class="text-center">Social Link</h5>
