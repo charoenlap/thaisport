@@ -12236,6 +12236,7 @@ label.error {
   }
   .nav-link.mobile {
     display:block;
+    color:#c41425;
   }
 }
 .footer-wrapper .lower-footer {

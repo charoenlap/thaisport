@@ -41,11 +41,12 @@ $(document).ready(function() {
     $('.banner-slider').owlCarousel({
         loop:true,
         margin:15,
-        nav:false,
+        nav:true,
         autoplay:true,  
         dots:true,
         items:1        
     })
+    
     $('.feedback-slider').owlCarousel({
         loop:true,
         margin:15,
