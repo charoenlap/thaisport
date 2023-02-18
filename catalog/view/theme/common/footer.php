@@ -2,24 +2,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="middle-footer">
+                    <div class="">
                         <div class="row">
                             <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
-                                <h5>Social Link</h5>
+                                <h5 class="text-center">Social Link</h5>
                                 <ul>
-                                    <li><a href="https://lin.ee/xi2HWrQ">Line</a></li>
-                                    <li><a href="#">Facebook</a></li>
+                                    <li class="text-center"><a href="https://lin.ee/xi2HWrQ">Line</a></li>
+                                    <li class="text-center"><a href="#">Facebook</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
-                                <h5>หน้าอื่นๆ</h5>
+                                <h5 class="text-center">อื่นๆ</h5>
                                 <ul>
-                                    <li><a href="<?php echo route('home/blogDetail');?>">เกี่ยวกับเรา</a></li>
-                                    <li><a href="<?php echo route('home/blogDetail');?>">ติดต่อเรา</a></li>
+                                    <li class="text-center"><a href="<?php echo route('home/blogDetail');?>">เกี่ยวกับเรา</a></li>
+                                    <li class="text-center"><a href="<?php echo route('home/blogDetail');?>">ติดต่อเรา</a></li>
                                 </ul>
                             </div>
                             
-                            <div class="col-md-6 col-lg-6">
+                            <div class="col-md-6 col-lg-6 mt-4">
                                 <h4 class="text-center">สนามกีฬาไก่ชนเทิดไท</h4>
                             </div>
                             

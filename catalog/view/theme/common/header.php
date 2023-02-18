@@ -21,6 +21,13 @@
                             <img src="assets/images/logo-2-t-c.png" alt="logo" class="light">
                             <img src="assets/images/logo-2-t-c.png" alt="logo" class="dark">
                         </a>
+
+                        <a class="nav-link first mobile" href="<?php echo route('home');?>">หน้าหลัก</a>
+                        <a class="nav-link mobile" href="<?php echo route('home/live');?>">
+                            <img src="images/logo.png" alt="" width="35px"> ถ่ายทอดสด
+                        </a>
+                        <a class="nav-link mobile" href="<?php echo route('home/blog');?>">ข่าวสาร</a>
+
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
                         aria-expanded="false" aria-label="Toggle navigation">
