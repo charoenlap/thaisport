@@ -19,88 +19,44 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 mt-4">
-                        <div class="slide-slider owl-carousel owl-theme">
-                            <div class="owl-items">
-                                <a class="slide-one" href="season.html">
-                                    <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
-                                    <div class="slide-content">
-                                        <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
-                                        <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                        <span class="tag">2 h 20 min</span>
-                                        <span class="tag">2020</span>
-                                        <span class="tag"><b>HD</b></span>
-                                        <span class="tag"><b>16+</b></span>
-                                    </div>
-                                </a>
+                    <div class="col-xs-6 col-4">
+                        <a class="slide-one" href="<?php echo route('home/live'); ?>">
+                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
+                            <div class="slide-content">
+                                <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
+                                <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
+                                <span class="tag">2 h 20 min</span>
+                                <span class="tag">2020</span>
+                                <span class="tag"><b>HD</b></span>
+                                <span class="tag"><b>16+</b></span>
                             </div>
-                            <div class="owl-items">
-                                <a class="slide-one" href="season.html">
-                                    <div class="slide-image"><img src="assets/images/s6.jpg" alt="image"></div>
-                                    <div class="slide-content">
-                                        <h2>Gravity <img src="assets/images/plus.png" alt="icon"></h2>
-                                        <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                        <span class="tag">2 h 20 min</span>
-                                        <span class="tag">2020</span>
-                                        <span class="tag"><b>HD</b></span>
-                                        <span class="tag"><b>16+</b></span>
-                                    </div>
-                                </a>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-4">
+                        <a class="slide-one" href="<?php echo route('home/live'); ?>">
+                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
+                            <div class="slide-content">
+                                <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
+                                <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
+                                <span class="tag">2 h 20 min</span>
+                                <span class="tag">2020</span>
+                                <span class="tag"><b>HD</b></span>
+                                <span class="tag"><b>16+</b></span>
                             </div>
-                            <div class="owl-items">
-                                <a class="slide-one" href="season.html">
-                                    <div class="slide-image"><img src="assets/images/s7.jpg" alt="image"></div>
-                                    <div class="slide-content">
-                                        <h2>Inspector <img src="assets/images/plus.png" alt="icon"></h2>
-                                        <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                        <span class="tag">2 h 20 min</span>
-                                        <span class="tag">2020</span>
-                                        <span class="tag"><b>HD</b></span>
-                                        <span class="tag"><b>16+</b></span>
-                                    </div>
-                                </a>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-4">
+                        <a class="slide-one" href="<?php echo route('home/live'); ?>">
+                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
+                            <div class="slide-content">
+                                <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
+                                <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
+                                <span class="tag">2 h 20 min</span>
+                                <span class="tag">2020</span>
+                                <span class="tag"><b>HD</b></span>
+                                <span class="tag"><b>16+</b></span>
                             </div>
-                            <div class="owl-items">
-                                <a class="slide-one" href="season.html">
-                                    <div class="slide-image"><img src="assets/images/s8.jpg" alt="image"></div>
-                                    <div class="slide-content">
-                                        <h2>Sky Staar <img src="assets/images/plus.png" alt="icon"></h2>
-                                        <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                        <span class="tag">2 h 20 min</span>
-                                        <span class="tag">2020</span>
-                                        <span class="tag"><b>HD</b></span>
-                                        <span class="tag"><b>16+</b></span>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="owl-items">
-                                <a class="slide-one" href="season.html">
-                                    <div class="slide-image"><img src="assets/images/s1.jpg" alt="image"></div>
-                                    <div class="slide-content">
-                                        <h2>Inspector <img src="assets/images/plus.png" alt="icon"></h2>
-                                        <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                        <span class="tag">2 h 20 min</span>
-                                        <span class="tag">2020</span>
-                                        <span class="tag"><b>HD</b></span>
-                                        <span class="tag"><b>16+</b></span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="owl-items">
-                                <a class="slide-one" href="season.html">
-                                    <div class="slide-image"><img src="assets/images/s2.jpg" alt="image"></div>
-                                    <div class="slide-content">
-                                        <h2>Sky Staar <img src="assets/images/plus.png" alt="icon"></h2>
-                                        <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                        <span class="tag">2 h 20 min</span>
-                                        <span class="tag">2020</span>
-                                        <span class="tag"><b>HD</b></span>
-                                        <span class="tag"><b>16+</b></span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -114,88 +70,44 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 mt-4">
-                        <div class="slide-slider owl-carousel owl-theme">
-                            <div class="owl-items">
-                                <a class="slide-one" href="season.html">
-                                    <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
-                                    <div class="slide-content">
-                                        <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
-                                        <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                        <span class="tag">2 h 20 min</span>
-                                        <span class="tag">2020</span>
-                                        <span class="tag"><b>HD</b></span>
-                                        <span class="tag"><b>16+</b></span>
-                                    </div>
-                                </a>
+                    <div class="col-xs-6 col-4">
+                        <a class="slide-one" href="<?php echo route('home/live'); ?>">
+                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
+                            <div class="slide-content">
+                                <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
+                                <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
+                                <span class="tag">2 h 20 min</span>
+                                <span class="tag">2020</span>
+                                <span class="tag"><b>HD</b></span>
+                                <span class="tag"><b>16+</b></span>
                             </div>
-                            <div class="owl-items">
-                                <a class="slide-one" href="season.html">
-                                    <div class="slide-image"><img src="assets/images/s6.jpg" alt="image"></div>
-                                    <div class="slide-content">
-                                        <h2>Gravity <img src="assets/images/plus.png" alt="icon"></h2>
-                                        <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                        <span class="tag">2 h 20 min</span>
-                                        <span class="tag">2020</span>
-                                        <span class="tag"><b>HD</b></span>
-                                        <span class="tag"><b>16+</b></span>
-                                    </div>
-                                </a>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-4">
+                        <a class="slide-one" href="<?php echo route('home/live'); ?>">
+                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
+                            <div class="slide-content">
+                                <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
+                                <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
+                                <span class="tag">2 h 20 min</span>
+                                <span class="tag">2020</span>
+                                <span class="tag"><b>HD</b></span>
+                                <span class="tag"><b>16+</b></span>
                             </div>
-                            <div class="owl-items">
-                                <a class="slide-one" href="season.html">
-                                    <div class="slide-image"><img src="assets/images/s7.jpg" alt="image"></div>
-                                    <div class="slide-content">
-                                        <h2>Inspector <img src="assets/images/plus.png" alt="icon"></h2>
-                                        <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                        <span class="tag">2 h 20 min</span>
-                                        <span class="tag">2020</span>
-                                        <span class="tag"><b>HD</b></span>
-                                        <span class="tag"><b>16+</b></span>
-                                    </div>
-                                </a>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-4">
+                        <a class="slide-one" href="<?php echo route('home/live'); ?>">
+                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
+                            <div class="slide-content">
+                                <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
+                                <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
+                                <span class="tag">2 h 20 min</span>
+                                <span class="tag">2020</span>
+                                <span class="tag"><b>HD</b></span>
+                                <span class="tag"><b>16+</b></span>
                             </div>
-                            <div class="owl-items">
-                                <a class="slide-one" href="season.html">
-                                    <div class="slide-image"><img src="assets/images/s8.jpg" alt="image"></div>
-                                    <div class="slide-content">
-                                        <h2>Sky Staar <img src="assets/images/plus.png" alt="icon"></h2>
-                                        <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                        <span class="tag">2 h 20 min</span>
-                                        <span class="tag">2020</span>
-                                        <span class="tag"><b>HD</b></span>
-                                        <span class="tag"><b>16+</b></span>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="owl-items">
-                                <a class="slide-one" href="season.html">
-                                    <div class="slide-image"><img src="assets/images/s1.jpg" alt="image"></div>
-                                    <div class="slide-content">
-                                        <h2>Inspector <img src="assets/images/plus.png" alt="icon"></h2>
-                                        <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                        <span class="tag">2 h 20 min</span>
-                                        <span class="tag">2020</span>
-                                        <span class="tag"><b>HD</b></span>
-                                        <span class="tag"><b>16+</b></span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="owl-items">
-                                <a class="slide-one" href="season.html">
-                                    <div class="slide-image"><img src="assets/images/s2.jpg" alt="image"></div>
-                                    <div class="slide-content">
-                                        <h2>Sky Staar <img src="assets/images/plus.png" alt="icon"></h2>
-                                        <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                        <span class="tag">2 h 20 min</span>
-                                        <span class="tag">2020</span>
-                                        <span class="tag"><b>HD</b></span>
-                                        <span class="tag"><b>16+</b></span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
