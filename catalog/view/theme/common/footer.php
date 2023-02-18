@@ -20,7 +20,7 @@
                             </div>
                             
                             <div class="col-md-6 col-lg-6">
-                                <h4 class="text-right">สนามกีฬาไก่ชนเทิดไท</h4>
+                                <h4 class="text-center">สนามกีฬาไก่ชนเทิดไท</h4>
                             </div>
                             
                             <!-- <div class="col-md-4 col-lg-2 col-sm-6 col-xs-6">
