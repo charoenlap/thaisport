@@ -33,7 +33,7 @@
                                 <li class="nav-item"><a class="nav-link" href="<?php echo route('home/blog');?>">ข่าวสาร</a></li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo route('home/live');?>">
-                                        <img src="images/logo.png" alt="" width="35px">
+                                        <img src="images/logo.png" alt="" width="35px"> ถ่ายทอดสด
                                     </a>
                                 </li>
                                 <li class="nav-item">
