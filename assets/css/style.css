@@ -12252,7 +12252,7 @@ label.error {
   overflow: hidden;
 }
 .banner-wrapper .owl-stage-outer {
-  overflow: visible;
+  /*overflow: visible;*/
 }
 .banner-wrapper .owl-stage-outer .owl-item {
   opacity: 0.4;

@@ -44,9 +44,10 @@ $(document).ready(function() {
         nav:true,
         autoplay:true,  
         dots:true,
-        items:1        
+        items:1,
+        rewind: false        
     })
-    
+
     $('.feedback-slider').owlCarousel({
         loop:true,
         margin:15,
