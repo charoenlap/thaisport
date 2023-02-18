@@ -9,7 +9,7 @@
         <!-- Favicon icon -->
         <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
         <!-- Custom Stylesheet -->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style.css?time=<?php echo time();?>">
         <link rel="stylesheet" href="assets/css/video-player.css">
     </head>
     <body>
@@ -37,7 +37,10 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <div class="user-avater">
+                                    <a class="nav-link" href="<?php echo route('member/login');?>">
+                                        สมาชิก
+                                    </a>
+                                    <!-- <div class="user-avater">
                                         <a class="nav-link" href="#">&nbsp;สมาชิก</a>
                                         <div class="user-menu">
                                             <ul>
@@ -47,7 +50,7 @@
                                                 <li><a href="<?php echo route('member/logout');?>">ออกจากระบบ</a></li>
                                             </ul>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </li>
                             </ul>
                         </div>

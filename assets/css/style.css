@@ -11967,12 +11967,14 @@ label.error {
     margin-left: 0;
     width: 100%;
     display: block;
+    margin-top:20px;
   }
 }
 .header-wrapper .nav-menu li {
   padding: 0 20px;
   display: inline-block;
   float: left;
+
 }
 @media only screen and (max-width: 992px) {
   .header-wrapper .nav-menu li {
@@ -11990,6 +11992,7 @@ label.error {
 @media only screen and (max-width: 992px) {
   .header-wrapper .nav-menu li a {
     padding: 0;
+    text-align:center;
   }
 }
 .header-wrapper .nav-menu.style2 li a {
@@ -13962,7 +13965,7 @@ body {
 .navbar-toggler-icon {
   width: 27px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #c41425;
   position: relative;
   top: -2px;
 }
@@ -13970,7 +13973,7 @@ body {
   content: "";
   width: 27px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #c41425;
   position: absolute;
   top: -8px;
   left: 0;
@@ -13979,7 +13982,7 @@ body {
   content: "";
   width: 27px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #c41425;
   position: absolute;
   bottom: -8px;
   left: 0;
@@ -14016,7 +14019,7 @@ body {
   .header-wrapper .user-avater,
 .header-wrapper .search-div,
 .header-wrapper .bttn {
-    display: none;
+    /*display: none;*/
   }
 
   .header-wrapper.posfixed {
