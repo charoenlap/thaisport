@@ -3,6 +3,9 @@
 		function index(){
 			
 		}
+		function info(){
+			phpinfo();
+		}
 		public function gitPull(){
 			exec("git pull");
 		}
