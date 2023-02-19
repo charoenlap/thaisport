@@ -7,7 +7,11 @@
 			phpinfo();
 		}
 		public function gitPull(){
-			exec("git pull");
+			$output=null;
+			$retval=null;
+			exec("git pull", $output, $retval);
+			echo "Returned with status $retval and output:\n";
+			print_r($output);
 		}
 		public function insertMember(){
 			$result = array(); 
