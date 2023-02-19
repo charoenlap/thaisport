@@ -7,7 +7,7 @@
 			exec("git pull");
 		}
 		public function insertMember(){
-			$result = array();
+			$result = array(); 
 			$params = array(
     			'username' => post('username'),
 				'password' => post('password')
