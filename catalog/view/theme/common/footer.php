@@ -4,11 +4,16 @@
                 <div class="col-sm-12">
                     <div class="pt-4">
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
-                                <h5 class="text-center">Social Link</h5>
+                            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-6">
+                                <h5 class="text-center">Line</h5>
                                 <ul>
-                                    <li class="text-center"><a href="https://lin.ee/xi2HWrQ">Line</a></li>
-                                    <li class="text-center"><a href="#">Facebook</a></li>
+                                    <li class="text-center"><a href="https://lin.ee/xi2HWrQ"><img src="images/M_598xbwkj_GW.png" alt="" width="100px;"></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-6">
+                                <h5 class="text-center">Facebook</h5>
+                                <ul>
+                                    <li class="text-center"><a href="qrcode_www.facebook.com.png"><img src="images/qrcode_www.facebook.com.png" alt="" width="100px;"></a></li>
                                 </ul>
                             </div>
                             <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
@@ -20,7 +25,7 @@
                                 </ul>
                             </div>
                             
-                            <div class="col-md-6 col-lg-6 mt-4">
+                            <div class="col-md-5 col-lg-5 mt-4">
                                 <h4 class="text-center">สนามกีฬาไก่ชนเทิดไท</h4>
                             </div>
                             
