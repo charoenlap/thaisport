@@ -23,10 +23,15 @@
                             <label for="name" class="sr-only">รหัสผ่าน</label>
                         </div>
                         <div class="row">
-                            <!-- <div class="col-xs-6 col-md-6">
+                            <div class="col-xs-6 col-md-6">
                                 <a href="<?php echo route('member/register'.($id_content?'&id_content'.$id_content:''));?>" class="btn btn-motive">สมัครสมาชิก</a>
+                            </div>
+                            <div class="col-xs-6 col-md-6 text-right">
                                 <a href="<?php echo route('member/forgot');?>" class="btn ">ลืมรหัสผ่าน</a>
-                            </div> -->
+                            </div>
+                            
+                        </div>
+                        <div class="row">
                             <div class="col-xs-12 col-md-12 text-right">
                                 <button type="submit" class="btn btn-motive btn-primary btn-block">เข้าสู่ระบบ</button>
                             </div>

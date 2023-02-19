@@ -16,6 +16,7 @@
                                 <ul>
                                     <li class="text-center"><a href="<?php echo route('home/blogDetail');?>">เกี่ยวกับเรา</a></li>
                                     <li class="text-center"><a href="<?php echo route('home/blogDetail');?>">ติดต่อเรา</a></li>
+                                    <li class="text-center"><a href="<?php echo route('home/blogDetail');?>">ติดต่อโฆษณา</a></li>
                                 </ul>
                             </div>
                             
