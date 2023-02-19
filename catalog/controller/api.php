@@ -3,6 +3,9 @@
 		function index(){
 			
 		}
+		public function gitPull(){
+			exec("git pull");
+		}
 		public function insertMember(){
 			$result = array();
 			$params = array(
