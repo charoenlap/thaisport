@@ -21,6 +21,7 @@
 
 */
 /*@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");*/
+
 @import "./../vendor/owl-carousel/css/owl.carousel.min.css";
 @import "./../vendor/owl-carousel/css/owl.theme.default.css";
 @font-face {
@@ -29,6 +30,16 @@
 }
 * {
   font-family: myFirstFont,"Times New Roman", Times, serif;
+}
+a.active-build {
+  animation: color-animation 0.5s linear infinite;
+}
+@keyframes color-animation {
+  0%    {color: #FFF}
+  100%  {color: red}
+}
+.alink a,.copyright-text{
+  color:white;
 }
 marquee {
   color:#c41425;
@@ -12000,7 +12011,8 @@ label.error {
 @media only screen and (max-width: 992px) {
   .header-wrapper .nav-menu li a {
     padding: 0;
-    text-align:center;
+    text-align:left;
+    padding-left:70px;
   }
 }
 .header-wrapper .nav-menu.style2 li a {

@@ -4,41 +4,32 @@
                 <div class="col-sm-12">
                     <div class="pt-4">
                         <div class="row">
-                            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-6">
-                                <h5 class="text-center">Line</h5>
-                                <ul>
-                                    <li class="text-center"><a href="https://lin.ee/xi2HWrQ"><img src="images/M_598xbwkj_GW.png" alt="" width="100px;"></a></li>
-                                </ul>
+                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center mb-4">
+                                <a href="https://lin.ee/xi2HWrQ">
+                                    <img src="images/line.png" alt="" width="50px;">
+                                </a>
+                                <a href="qrcode_www.facebook.com.png">
+                                    <img src="images/facebook.png" alt="" width="50px;">
+                                </a>
                             </div>
-                            <div class="col-md-2 col-lg-2 col-sm-2 col-xs-6">
-                                <h5 class="text-center">Facebook</h5>
-                                <ul>
-                                    <li class="text-center"><a href="qrcode_www.facebook.com.png"><img src="images/qrcode_www.facebook.com.png" alt="" width="100px;"></a></li>
-                                </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                <div class="text-center alink">
+                                    <a href="<?php echo route('home/blogDetail');?>">เกี่ยวกับเรา</a> / <a href="<?php echo route('home/blogDetail');?>">ติดต่อเรา</a> / <a href="<?php echo route('home/blogDetail');?>">ติดต่อโฆษณา</a>
+                                </div>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
-                                <h5 class="text-center">อื่นๆ</h5>
-                                <ul>
-                                    <li class="text-center"><a href="<?php echo route('home/blogDetail');?>">เกี่ยวกับเรา</a></li>
-                                    <li class="text-center"><a href="<?php echo route('home/blogDetail');?>">ติดต่อเรา</a></li>
-                                    <li class="text-center"><a href="<?php echo route('home/blogDetail');?>">ติดต่อโฆษณา</a></li>
-                                </ul>
-                            </div>
-                            
-                            <div class="col-md-5 col-lg-5 mt-4">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12 mt-4">
                                 <h4 class="text-center">สนามกีฬาไก่ชนเทิดไท</h4>
                             </div>
-                            
-                            <!-- <div class="col-md-4 col-lg-2 col-sm-6 col-xs-6">
-                                <h5 class="mb-3">Office</h5>
-                                <p style="width: 100%;">41 madison ave, floor 24 new work, NY 10010 <br>1-877-932-7111</p>
-                            </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 lower-footer"></div>
-                <div class="col-sm-6">
-                    <p class="copyright-text">© 2023 copyright. All rights reserved.</p>
+                <div class="col-sm-12 text-center">
+                    <span class="copyright-text">© 2023 copyright. All rights reserved.</span>
                 </div>
             </div>
         </div>

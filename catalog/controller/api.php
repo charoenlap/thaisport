@@ -1,7 +1,7 @@
 <?php 
 	class ApiController extends Controller {
 		function index(){
-			
+			echo "test";
 		}
 		function info(){
 			phpinfo();

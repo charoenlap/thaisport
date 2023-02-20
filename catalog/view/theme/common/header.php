@@ -21,12 +21,11 @@
                             <img src="assets/images/logo-2-t-c.png" alt="logo" class="light">
                             <img src="assets/images/logo-2-t-c.png" alt="logo" class="dark">
                         </a>
-
                         <a class="nav-link first mobile" href="<?php echo route('home');?>">หน้าหลัก</a>
-                        <a class="nav-link mobile" href="<?php echo route('home/live');?>">
-                            <img src="images/logo.png" alt="" width="35px"> ถ่ายทอดสด
+                        <a class="nav-link mobile active-build" href="<?php echo route('home/live');?>">
+                             ถ่ายทอดสด
                         </a>
-                        <a class="nav-link mobile" href="<?php echo route('home/blog');?>">ข่าวสาร</a>
+                        <a class="nav-link mobile" href="<?php echo route('member/login');?>">สมาชิก</a>
 
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
@@ -35,38 +34,27 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav nav-menu float-none text-center">
-                                <li class="nav-item"><a class="nav-link" href="<?php echo route('home');?>">หน้าหลัก</a></li>
-                                <li class="nav-item"><a class="nav-link" href="<?php echo route('home/page');?>">ชมย้อนหลัง</a></li>
-                                <li class="nav-item"><a class="nav-link" href="<?php echo route('home/blog');?>">ข่าวสาร</a></li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo route('home/live');?>">
-                                        <img src="images/logo.png" alt="" width="35px"> ถ่ายทอดสด
+                                    <a class="nav-link" href="<?php echo route('home');?>">หน้าหลัก</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active-build" href="<?php echo route('home/live');?>">
+                                         ถ่ายทอดสด
                                     </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo route('home/page');?>">ชมย้อนหลัง</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo route('member/login');?>">
                                         สมาชิก
                                     </a>
-                                    <!-- <div class="user-avater">
-                                        <a class="nav-link" href="#">&nbsp;สมาชิก</a>
-                                        <div class="user-menu">
-                                            <ul>
-                                                <li><a href="<?php echo route('member/register');?>">สมัครสมาชิก</a></li>
-                                                <li><a href="<?php echo route('member/login');?>">เข้าสู่ระบบ</a></li>
-                                                <li><a href="<?php echo route('member/historyPayment');?>">ข้อมูลสมาชิก</a></li>
-                                                <li><a href="<?php echo route('member/logout');?>">ออกจากระบบ</a></li>
-                                            </ul>
-                                        </div>
-                                    </div> -->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo route('home/blog');?>">ข่าวสาร</a>
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        
-                        <!-- <div class="search-div">
-                            <input type="text" placeholder="ค้นหา">
-                        </div> -->
                     </div>
                 </div>
             </div>
