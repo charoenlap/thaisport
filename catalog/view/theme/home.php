@@ -10,63 +10,36 @@
                             <div class="owl-items">
                                 <div class="banner-wrap justify-content-between align-items-center">
                                     <div class="left-wrap">
-                                        <h2>ชิง 40,2000,000 บาท</h2>
-                                        <span class="tag"><b>วันอาทิตย์ที่ 31 กรกฎาคม 2565</b></span>
-                                        <p>ซุ้ม บ้านเมืองนนท์ VS ซุ้ม มีสุวรรณทีม</p>
-                                        <a href="<?php echo route('payment');?>" class="btn btn-lg"><img src="assets/images/play.png" alt="icn">เข้าชม</a>
+                                        <h2>ชิง 2,2000,000 บาท</h2>
+                                        <span class="tag"><b>วันอาทิตย์ที่ 26 กุมภาพันธ์ 2566</b></span>
+                                        <p>ซุ้ม บ้านเมืองนนท์ VS ซุ้ม บ่อทอง ฟาร์ม</p>
+                                        <a href="<?php echo route('home/live');?>" class="btn btn-lg"><img src="assets/images/play.png" alt="icn">เข้าชม</a>
                                     </div>
-                                    <div class="right-wrap" style="background-image: url(assets/images/20220729.jpg);background-position: center;"></div>
+                                    <div class="right-wrap" style="background-image: url(images/คู่เอก.jpg);background-position: center;"></div>
                                 </div>
                             </div>
                             <div class="owl-items">
                                 <div class="banner-wrap justify-content-between align-items-center">
                                     <div class="left-wrap">
-                                        <h2>ชิง 2,200,000</h2>
-                                        <span class="tag"><b>วันอาทิตย์ที่ 31 กรกฎาคม 2565</b></span>
-                                        <p>ซุ้ม ลานไม้วุฒิพงษ์ VS ซุ้ม พญาบ้านดอน</p>
-                                        <a href="<?php echo route('payment');?>" class="btn btn-lg"><img src="assets/images/play.png" alt="icn">เข้าชม</a>
+                                        <h2>ชิง 1,1000,000 บาท</h2>
+                                        <span class="tag"><b>วันอาทิตย์ที่ 26 กุมภาพันธ์ 2566</b></span>
+                                        <p>ซุ้ม เพชรธงชัยฟาร์ม VS ซุ้ม ใจสั่งลุย</p>
+                                        <a href="<?php echo route('home/live');?>" class="btn btn-lg"><img src="assets/images/play.png" alt="icn">เข้าชม</a>
                                     </div>
-                                    <div class="right-wrap" style="background-image: url(assets/images/20220729_2.jpg);background-position: center;"></div>
-                                </div>
-                            </div>
-                            
-                            
-                            <!-- <div class="owl-items">
-                                <div class="banner-wrap justify-content-between align-items-center">
-                                    <div class="left-wrap">
-                                        <span class="rnd">IMDb 6.7</span>
-                                        <h2>Zero<br> dark night</h2>
-                                        <span class="tag"><b>SEASON 1</b></span>
-                                        <span class="tag">2020</span>
-                                        <span class="tag"><b>HD</b></span>
-                                        <span class="tag"><b>16+</b></span>
-                                        <span class="tag">2 h 20 min</span>
-                                        <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather. Tamanna is a YouTube pop sensation desperate to become .</p>
-                                        <a href="#" class="btn btn-lg"><img src="assets/images/play.png" alt="icn">Watch now</a>
-                                    </div>
-                                    <div class="right-wrap" style="background-image: url(assets/images/banner-2.jpg);"></div>
+                                    <div class="right-wrap" style="background-image: url(images/คู่รอง1.jpg);background-position: center;"></div>
                                 </div>
                             </div>
                             <div class="owl-items">
                                 <div class="banner-wrap justify-content-between align-items-center">
                                     <div class="left-wrap">
-                                        <span class="rnd">IMDb 6.7</span>
-                                        <h2>The <br> night ever</h2>
-                                        <span class="tag"><b>SEASON 1</b></span>
-                                        <span class="tag">2020</span>
-                                        <span class="tag"><b>HD</b></span>
-                                        <span class="tag"><b>16+</b></span>
-                                        <span class="tag">2 h 20 min</span>
-                                        <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather. Tamanna is a YouTube pop sensation desperate to become .</p>
-                                        <a href="#" class="btn btn-lg"><img src="assets/images/play.png" alt="icn">Watch now</a>
+                                        <h2>ชิง 1,1000,000 บาท</h2>
+                                        <span class="tag"><b>วันอาทิตย์ที่ 26 กุมภาพันธ์ 2566</b></span>
+                                        <p>ซุ้ม เพชรรางลึก VS ซุ้ม วรฉัตร</p>
+                                        <a href="<?php echo route('home/live');?>" class="btn btn-lg"><img src="assets/images/play.png" alt="icn">เข้าชม</a>
                                     </div>
-                                    <div class="right-wrap">
-                                        <video autoplay muted loop id="myVideo">
-                                            <source src="assets/images/video3.mp4" type="video/mp4">
-                                        </video>
-                                    </div>
+                                    <div class="right-wrap" style="background-image: url(images/คู่รอง2.jpg);background-position: center;"></div>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>

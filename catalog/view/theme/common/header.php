@@ -18,8 +18,8 @@
                 <div class="row">
                     <div class="col-lg-8 navbar p-0" style="">
                         <a href="#" class="logo">
-                            <img src="assets/images/logo-2-t-c.png" alt="logo" class="light">
-                            <img src="assets/images/logo-2-t-c.png" alt="logo" class="dark">
+                            <img src="images/Logo Thaisport.png" alt="logo" class="light">
+                            <img src="images/Logo Thaisport.png" alt="logo" class="dark">
                         </a>
                         <a class="nav-link first mobile" href="<?php echo route('home');?>">หน้าหลัก</a>
                         <a class="nav-link mobile active-build" href="<?php echo route('home/live');?>">

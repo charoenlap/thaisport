@@ -5,7 +5,7 @@
                     <div class="pt-4">
                         <div class="row">
                             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center mb-4">
-                                <a href="https://lin.ee/xi2HWrQ">
+                                <a href="https://lin.ee/UFj4oXI">
                                     <img src="images/line.png" alt="" width="50px;">
                                 </a>
                                 <a href="https://www.facebook.com/pages/%E0%B8%AA%E0%B8%99%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%99%E0%B9%84%E0%B8%81%E0%B9%88%E0%B9%80%E0%B8%97%E0%B8%B4%E0%B8%94%E0%B9%84%E0%B8%97/334723749934331">

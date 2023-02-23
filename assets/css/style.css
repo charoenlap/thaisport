@@ -12250,7 +12250,7 @@ label.error {
 .nav-link.mobile {
     display:none;
   }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .nav-link.first {
     margin-left: 70px;
   }

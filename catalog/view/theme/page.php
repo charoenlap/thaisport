@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col-xs-6 col-4">
                         <a class="slide-one" href="<?php echo route('home/live'); ?>">
-                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
+                            <div class="slide-image"><img src="assets/images/20220729.jpg" alt="image"></div>
                             <div class="slide-content">
                                 <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
                                 <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
@@ -34,7 +34,7 @@
                     </div>
                     <div class="col-xs-6 col-4">
                         <a class="slide-one" href="<?php echo route('home/live'); ?>">
-                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
+                            <div class="slide-image"><img src="assets/images/20220729.jpg" alt="image"></div>
                             <div class="slide-content">
                                 <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
                                 <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="col-xs-6 col-4">
                         <a class="slide-one" href="<?php echo route('home/live'); ?>">
-                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
+                            <div class="slide-image"><img src="assets/images/20220729.jpg" alt="image"></div>
                             <div class="slide-content">
                                 <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
                                 <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
@@ -72,7 +72,7 @@
                 <div class="row">
                     <div class="col-xs-6 col-4 mt-4">
                         <a class="slide-one" href="<?php echo route('home/live'); ?>">
-                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
+                            <div class="slide-image"><img src="assets/images/20220729.jpg" alt="image"></div>
                             <div class="slide-content">
                                 <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
                                 <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
@@ -85,7 +85,7 @@
                     </div>
                     <div class="col-xs-6 col-4 mt-4">
                         <a class="slide-one" href="<?php echo route('home/live'); ?>">
-                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
+                            <div class="slide-image"><img src="assets/images/20220729.jpg" alt="image"></div>
                             <div class="slide-content">
                                 <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
                                 <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="col-xs-6 col-4 mt-4">
                         <a class="slide-one" href="<?php echo route('home/live'); ?>">
-                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
+                            <div class="slide-image"><img src="assets/images/20220729.jpg" alt="image"></div>
                             <div class="slide-content">
                                 <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
                                 <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
