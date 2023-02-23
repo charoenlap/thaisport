@@ -65,7 +65,7 @@
         <div class="slide-wrapper search-wrap-slide">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-12"> 
                         <h2 class="mb-3">เพิ่มเติม</h2>
                     </div>
                 </div>
