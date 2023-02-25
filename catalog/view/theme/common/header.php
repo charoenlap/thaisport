@@ -11,6 +11,13 @@
         <!-- Custom Stylesheet -->
         <link rel="stylesheet" href="assets/css/style.css?time=<?php echo time();?>">
         <link rel="stylesheet" href="assets/css/video-player.css">
+
+        
+        
+        <script src="assets/js/plugin.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+
     </head>
     <body>
         <div class="header-wrapper">

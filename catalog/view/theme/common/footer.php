@@ -34,9 +34,7 @@
             </div>
         </div>
     </div>
-    <script src="assets/js/plugin.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    
     <!-- <script src="assets/js/video-player.js"></script> -->
     
     </body>

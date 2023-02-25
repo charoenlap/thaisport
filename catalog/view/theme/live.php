@@ -3,11 +3,30 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
+            <style>
+                .wrapper{
+                      margin-left: 20px; margin-top:20px; height:480px ; width:100%;
+                }
+            </style>
+            <div class="wrapper">
+                <div id="player"></div>
+            </div>
+            <script src="liveplayer.js"></script>
+            <script>
+              LivePlayer.load ([
+            {
+                  "file": "wss://streaming01.thaisport-stadium.com:3334/sportlive/sport_live01",
+                  "type": "webrtc",
+                  "label": "HD",
+                  "default": "true"
+            }
+            ]);
+            </script>
             <!-- <button onclick="playPause()" id="btnplay" class="btn ">Play/Pause</button>  -->
-            <video width="100%" height="100%" controls id="video1" autoplay>
+            <!-- <video width="100%" height="100%" controls id="video1" autoplay>
               <source src="uploads/คู่เอกยก4.mp4" type="video/mp4">
             Your browser does not support the video tag.
-            </video>
+            </video> -->
         </div>
     </div>
     <div class="row mt-4">
