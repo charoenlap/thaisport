@@ -415,7 +415,7 @@
 			    $_SESSION['profile'] = $profile;
 			    // header('location: index.php');
 			}
-			var_dump($_SESSION);exit();
+			// var_dump($_SESSION);exit();
 			$data = array();
 	    	$result = "failed";
 
@@ -448,6 +448,8 @@
 						redirect('home');
 					}
 				}
+	    	}else{
+	    		redirect('member/login&result=ไม่สามารถสมัครได้เนื่องจากไม่มี Email');
 	    	}
 	    }
 	}
