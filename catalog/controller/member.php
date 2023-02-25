@@ -413,9 +413,9 @@
 			if ($token->id_token) {
 			    $profile = $line->profileFormIdToken($token);
 			    $_SESSION['profile'] = $profile;
-			    header('location: index.php');
+			    // header('location: index.php');
 			}
-			// var_dump($_SESSION);exit();
+			var_dump($_SESSION);exit();
 			$data = array();
 	    	$result = "failed";
 
