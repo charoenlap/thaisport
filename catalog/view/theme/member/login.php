@@ -22,6 +22,13 @@
                             <input type="password" placeholder="รหัสผ่าน" id="password" name="password" required="required" class="form-control">
                             <label for="name" class="sr-only">รหัสผ่าน</label>
                         </div>
+                        <?php if($result){?>
+                            <div class="row">
+                                <div class="col-12">
+                                    <?php echo $result;?>
+                                </div>
+                            </div>
+                        <?php } ?>
                         <div class="row">
                             <div class="col-xs-6 col-md-6">
                                 <a href="<?php echo route('member/register'.($id_content?'&id_content'.$id_content:''));?>" class="btn btn-motive">สมัครสมาชิก</a>
