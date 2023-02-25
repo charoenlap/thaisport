@@ -19,7 +19,7 @@
                     <h3 class="ct-u-padding-bottom-30">ลืมรหัสผ่าน</h3>
                     <form action="#" method="POST" data-email-subject="Sporta" class="ct-js-validate">
                         <p class="text-danger">หาต้องการเปลี่ยนรหัสผ่านกรุณาติดต่อเจ้าหน้าที่ โดยสแกนที่ QR Code ด้านล่าง</p>
-                        <img src="M_gainfriends_qr.png" style="max-width:100%;height:auto;" alt="">
+                        <img src="uploads/line.png" style="max-width:100%;height:auto;" alt="">
                         <a href="https://lin.ee/UFj4oXI" class="btn btn-primary">หรือคลิกที่นี่</a>
                     </form>
                 </div>
