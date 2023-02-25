@@ -256,7 +256,7 @@
 	    	$data['id_content']  	= get('id_content');
 	    	$data['redirect']  	= get('redirect');
 	    	$data['action'] = route('member/submitLogin');
-
+	    	$data['result'] = get('result');
 	    	require_once(DOCUMENT_ROOT_LINE.'LineLogin.php');
 	    	$line = new LineLogin();
 		    $data['link_line'] = $line->getLink();
