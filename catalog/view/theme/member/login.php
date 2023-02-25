@@ -25,7 +25,7 @@
                         <?php if($result){?>
                             <div class="row">
                                 <div class="col-12">
-                                    <?php echo $result;?>
+                                    <p class="text-danger"><?php echo $result;?></p>
                                 </div>
                             </div>
                         <?php } ?>
