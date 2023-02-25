@@ -10,12 +10,12 @@
                             <div class="owl-items">
                                 <div class="banner-wrap justify-content-between align-items-center">
                                     <div class="left-wrap">
-                                        <h2>ชิง 2,2000,000 บาท</h2>
+                                        <h2>ชิง 4,4000,000 บาท</h2>
                                         <span class="tag"><b>วันอาทิตย์ที่ 26 กุมภาพันธ์ 2566</b></span>
                                         <p>ซุ้ม บ้านเมืองนนท์ VS ซุ้ม บ่อทอง ฟาร์ม</p>
                                         <a href="<?php echo route('home/live');?>" class="btn btn-lg"><img src="assets/images/play.png" alt="icn">เข้าชม</a>
                                     </div>
-                                    <div class="right-wrap" style="background-image: url(images/คู่เอก.jpg);background-position: center;"></div>
+                                    <div class="right-wrap" style="background-image: url(uploads/5214.jpg);background-position: center;" onclick="window.location='<?php echo route('home/live');?>'"></div>
                                 </div>
                             </div>
                             <div class="owl-items">
@@ -26,7 +26,7 @@
                                         <p>ซุ้ม เพชรธงชัยฟาร์ม VS ซุ้ม ใจสั่งลุย</p>
                                         <a href="<?php echo route('home/live');?>" class="btn btn-lg"><img src="assets/images/play.png" alt="icn">เข้าชม</a>
                                     </div>
-                                    <div class="right-wrap" style="background-image: url(images/คู่รอง1.jpg);background-position: center;"></div>
+                                    <div class="right-wrap" style="background-image: url(images/คู่รอง1.jpg);background-position: center;" onclick="window.location='<?php echo route('home/live');?>'"></div>
                                 </div>
                             </div>
                             <div class="owl-items">
@@ -37,7 +37,7 @@
                                         <p>ซุ้ม เพชรรางลึก VS ซุ้ม วรฉัตร</p>
                                         <a href="<?php echo route('home/live');?>" class="btn btn-lg"><img src="assets/images/play.png" alt="icn">เข้าชม</a>
                                     </div>
-                                    <div class="right-wrap" style="background-image: url(images/คู่รอง2.jpg);background-position: center;"></div>
+                                    <div class="right-wrap" style="background-image: url(images/คู่รอง2.jpg);background-position: center;" onclick="window.location='<?php echo route('home/live');?>'"></div>
                                 </div>
                             </div>
                         </div>
