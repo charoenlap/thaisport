@@ -260,6 +260,7 @@
 	    	require_once(DOCUMENT_ROOT_LINE.'LineLogin.php');
 	    	$line = new LineLogin();
 		    $data['link_line'] = $line->getLink();
+		    // echo $data['link_line'];
 		    // echo '<a href="', $link, '">Login</a>';
 
  	    	$this->view('member/login',$data); 
@@ -421,7 +422,7 @@
 	    	$email 		= $_SESSION['profile']->email;
 	    	if($email){
 	    		$phone 		= $email;
-				$password 	= 'Gosport1234';
+				$password 	= 'thaisport1234';
 
 				$insert = array(
 					'username' => $phone,

@@ -2,9 +2,9 @@
 class LineLogin
 {
     #### change your id
-    const CLIENT_ID = '1657431920';
-    const CLIENT_SECRET = 'ed5798288876c5b3a660bf3dd59e0674';
-    const REDIRECT_URL = 'https://gosport.world/index.php?route=member/callback';
+    const CLIENT_ID = '1660664502';
+    const CLIENT_SECRET = '6bdc7ab0537e9f3c54ad3928fd6581f6';
+    const REDIRECT_URL = 'http://thaisport-stadium.com/index.php?route=member/callback';
 
     const AUTH_URL = 'https://access.line.me/oauth2/v2.1/authorize';
     const PROFILE_URL = 'https://api.line.me/v2/profile';
