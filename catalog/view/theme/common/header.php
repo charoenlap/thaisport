@@ -25,7 +25,12 @@
                         <a class="nav-link mobile active-build" href="<?php echo route('home/live');?>">
                              ถ่ายทอดสด
                         </a>
-                        <a class="nav-link mobile" href="<?php echo route('member/login');?>">สมาชิก</a>
+                        
+                        <?php if($username){ ?>
+                            <a class="nav-link mobile" href="<?php echo route('member/login');?>"><?php echo $username; ?></a>
+                        <?php }else{?>
+                            <a class="nav-link mobile" href="<?php echo route('member/login');?>">สมาชิก</a>
+                        <?php } ?>
 
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
@@ -45,11 +50,19 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo route('home/page');?>">ชมย้อนหลัง</a>
                                 </li>
+                                <?php if($username){ ?>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo route('member/historyPayment');?>">
+                                        <?php echo $username; ?>
+                                    </a>
+                                </li>
+                                <?php }else{?>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo route('member/login');?>">
                                         สมาชิก
                                     </a>
                                 </li>
+                                <?php } ?>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo route('home/blog');?>">ข่าวสาร</a>
                                 </li>

@@ -1,9 +1,10 @@
 <?php 
 	class CommonController extends Controller {
 	    public function header($data=array()) {
-	    	$data['package'] = $this->model('master')->getPackage();
-	    	$data['kai'] = $this->model('master')->getKai();
-	    	$data['muay'] = $this->model('master')->getMuay();
+	    	// $data['package'] = $this->model('master')->getPackage();
+	    	// $data['kai'] = $this->model('master')->getKai();
+	    	// $data['muay'] = $this->model('master')->getMuay();
+	    	// var_dump($_SESSION);
 	    	$data['username'] = $this->getSession('username');
 	    	$data['route'] = get('route');
 	    	$data['id'] = get('id');

@@ -2,15 +2,8 @@
     <div class="inner">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-12">
                     <h1 class="ct-page-header__title">ประวัติการชำระเงิน</h1>
-                </div>
-                <div class="col-sm-8">
-                    <ul class="breadcrumb">
-                        <li><a href="<?php echo route('home');?>">หน้าหลัก</a>
-                        </li>
-                        <li>ประวัติการชำระเงิน</li>
-                    </ul>
                 </div>
             </div>
         </div>
