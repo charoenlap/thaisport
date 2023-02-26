@@ -23,6 +23,9 @@
                         <div class="row">
                             <div class="col-md-12 col-lg-12 mt-4">
                                 <h4 class="text-center">สนามกีฬาไก่ชนเทิดไท</h4>
+                                <div class="text-center">
+                                    <div id="sfclq8rlpy9wu3a1gy4kpa5x6y74sjgdjgm"></div><script type="text/javascript" src="https://counter4.optistats.ovh/private/counter.js?c=lq8rlpy9wu3a1gy4kpa5x6y74sjgdjgm&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="free hit counter"><img src="https://counter4.optistats.ovh/private/freecounterstat.php?c=lq8rlpy9wu3a1gy4kpa5x6y74sjgdjgm" border="0" title="free hit counter" alt="free hit counter"></a></noscript>
+                                </div>
                             </div>
                         </div>
                     </div>
