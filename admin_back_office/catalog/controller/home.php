@@ -27,7 +27,7 @@
 	    			);	
 	    		}
 	    		$data['resultGraph'] = json_encode($data['resultGraph']);
-	    		// var_dump($resultGraph);exit();
+
 		    	$this->view('home',$data);
 		    }else{
 		    	redirect('login');

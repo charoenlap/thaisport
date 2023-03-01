@@ -1,6 +1,6 @@
 <?php 
-	
-	define('BASE', $base.'/admin_back_office/');
+	// echo $base;
+	define('BASE', $base.'admin_back_office/');
 	define('BASE_CATALOG', BASE.'catalog/');
 	define('THEME','theme');
 	define('BASE_ASSET', MURL.'assets/'.THEME.'/');

@@ -206,7 +206,7 @@
             return array('password'=>$password);
         }
         public function getKai(){
-            $query = $this->query("SELECT * FROM gs_content WHERE id_category = 2"); 
+            $query = $this->query("SELECT * FROM gs_content WHERE id_category = 2 AND del<>1"); 
             return $query->rows;
         }
         public function getMuay(){

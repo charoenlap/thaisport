@@ -23,22 +23,12 @@
         <a class="nav-link" href="index.php">หน้าหลัก <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          บทความ & ข่าวสาร
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php echo route('news'); ?>">ดูทั้งหมด</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="<?php echo route('news/add'); ?>">เพิ่ม</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           มวย
-        </a>
+        </a> -->
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <?php foreach($muay as $val){ ?>
-          	<a class="dropdown-item" href="<?php echo route('muay&id_content='.$val['id']);?>"><?php echo $val['title'];?></a>
+            <a class="dropdown-item" href="<?php echo route('muay&id_content='.$val['id']);?>"><?php echo $val['title'];?></a>
           <?php } ?>
         </div>
       </li>
@@ -48,10 +38,22 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
            <?php foreach($kai as $val){ ?>
-          	<a class="dropdown-item" href="<?php echo route('kai&id_content='.$val['id']);?>"><?php echo $val['title'];?></a>
-          	<?php } ?>
+            <a class="dropdown-item" href="<?php echo route('kai&id_content='.$val['id']);?>"><?php echo $val['title'];?></a>
+            <?php } ?>
         </div>
       </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          บทความ & ข่าวสาร
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="<?php echo route('news'); ?>">ดูทั้งหมด</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="<?php echo route('news/add'); ?>">เพิ่ม</a>
+        </div>
+      </li>
+      
+      
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           แพคเกจ
