@@ -18,7 +18,7 @@
 				<label for="">หัวข้อ</label>
 			</div>
 			<div class="col-10">
-				<input type="text" class="form-control" value="<?php echo (isset($detail['title'])?$detail['title']:'');?>">
+				<input type="text" class="form-control" value="<?php echo (isset($detail['title'])?$detail['title']:'');?>" name="title">
 			</div>
 		</div>
 		<div class="row mt-2">
@@ -34,7 +34,7 @@
 				<label for="">สถานที่</label>
 			</div>
 			<div class="col-4">
-				<input type="text" class="form-control" value="<?php echo (isset($detail['location'])?$detail['location']:'');?>">
+				<input type="text" class="form-control" value="<?php echo (isset($detail['location'])?$detail['location']:'');?>" name="location">
 			</div>
 			<div class="col-2">
 				<label for="">วันที่แสดง</label>
@@ -97,7 +97,7 @@
 				<label for="">เพิ่มลงหน้าแรก</label>
 			</div>
 			<div class="col-10">
-				<input type="checkbox" name="chkHome" value="1">
+				<input type="checkbox" name="chkHome" value="1" checked>
 			</div>
 		</div>
 		<div class="row mt-2">

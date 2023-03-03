@@ -32,7 +32,8 @@
 			    		$insert['cover'] = $name;
 			    	}
 			    	$this->model('master')->insertNews($insert);
-			    	redirect('news&id_content='.post('id_content'));
+					// var_dump($insert);exit();
+			    	redirect('news');
 		    	}else{
 		    		$data['title'] = 'เพิ่ม';
 		    		$data['action'] = route('news/add');

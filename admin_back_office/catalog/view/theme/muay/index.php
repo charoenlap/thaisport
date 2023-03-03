@@ -19,7 +19,7 @@
 					<?php $i=1;foreach($result as $val){ ?>
 					<tr>
 						<td><?php echo $i;?></td>
-						<td><img src="../uploads/content/<?php echo $val['banner']; ?>" alt="" style="height:50px;"></td>
+						<td><img src="../uploads/content/<?php echo $val['cover']; ?>" alt="" style="height:50px;"></td>
 						<td><?php echo $val['location']; ?></td>
 						<td><?php echo $val['title']; ?></td>
 						<td><?php echo $val['date_start']; ?></td>

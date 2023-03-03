@@ -34,7 +34,7 @@
 				<label for="">แสดงที่หน้าหลัก</label>
 			</div>
 			<div class="col-10">
-				<input type="checkbox" name="show" value="1" <?php echo (isset($detail['show'])?'checked':'');?>>
+				<input type="checkbox" name="show" value="1" <?php echo (isset($detail['show'])?'checked':'');?> checked>
 			</div>
 		</div>
 		<div class="row mt-2">

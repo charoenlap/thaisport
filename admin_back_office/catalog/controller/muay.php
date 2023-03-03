@@ -18,7 +18,7 @@
 		    	$data = array(); 
 		    	if(method_post()){
 		    		$muntiImages = array();
-		    		$file = $_FILES['banner'];
+		    		$file = (isset($_FILES['banner'])?$_FILES['banner']:'');
 		    		if(isset($_FILES['banner'])){
 			    		$banner = time()."_".$_FILES['banner']['name'];
 			    		upload( $_FILES['banner'],'../uploads/content/',$banner);
@@ -76,7 +76,6 @@
 				    	if($cover){
 				    		$insert['cover'] = $cover;
 				    	}
-				    	// var_dump($insert);exit();
 			    		$this->model('master')->insertNews($insert);
 			    	}
 			    	redirect('muay&id_content='.post('id_content'));
