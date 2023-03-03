@@ -18,12 +18,7 @@
 				<label for="">หัวข้อ</label>
 			</div>
 			<div class="col-10">
-				<select class="form-control select2-title" name="title">
-				  <option selected="selected"><?php echo (isset($detail['title'])?$detail['title']:'');?></option>
-				  <?php foreach($topic as $val){?>
-				  	<option value="<?php echo $val['title'];?>"><?php echo $val['title'];?></option>
-				  <?php } ?>
-				</select>
+				<input type="text" class="form-control" value="<?php echo (isset($detail['title'])?$detail['title']:'');?>">
 			</div>
 		</div>
 		<div class="row mt-2">
@@ -39,14 +34,7 @@
 				<label for="">สถานที่</label>
 			</div>
 			<div class="col-4">
-				<select class="form-control select2-title" name="location">
-				  <option selected="selected"><?php echo (isset($detail['location'])?$detail['location']:'');?></option>
-				  <?php foreach($topic as $val){ 
-				  	if(empty($val['location'])){ continue;}
-				  ?>
-				  	<option value="<?php echo $val['location'];?>"><?php echo $val['location'];?></option>
-				  <?php } ?>
-				</select>
+				<input type="text" class="form-control" value="<?php echo (isset($detail['location'])?$detail['location']:'');?>">
 			</div>
 			<div class="col-2">
 				<label for="">วันที่แสดง</label>
@@ -60,11 +48,11 @@
 				<label for="">URL Stream</label>
 			</div>
 			<div class="col-10">
-				<input type="text" class="form-control" name="url" value="<?php echo (isset($detail['url'])?$detail['url']:'wss://streaming01.gosport.world:3334/gosportlive/gosport_live01');?>">
+				<input type="text" class="form-control" name="url" value="<?php echo (isset($detail['url'])?$detail['url']:'wss://streaming01.thaisport-stadium.com:3334/sportlive/sport_live01');?>">
 			</div>
 		</div>
 		<div class="row mt-2">
-			<div class="col-2">
+			<!-- <div class="col-2">
 				<label for="">รูป</label>
 			</div>
 			<div class="col-4">
@@ -74,7 +62,7 @@
 						<img src="../uploads/content/<?php echo $detail['banner'];?>" alt="" style="width:100%;">
 					<?php } ?>
 				</div>
-			</div>
+			</div> -->
 			<div class="col-2">
 				<label for="">ภาพปก</label>
 			</div>

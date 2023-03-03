@@ -13,10 +13,10 @@
 	ini_set('display_startup_errors', 1);
 	error_reporting(E_ALL);
 	if($_SERVER['SERVER_NAME'] == 'localhost'){
-		require_once('/Users/charoenlapanatamsombat/Documents/htdocs/thaisport/config/domains/thaisport/config.php'); 
-		require_once('/Users/charoenlapanatamsombat/Documents/htdocs/thaisport/lib/function/main_function.php');
-		require_once('/Users/charoenlapanatamsombat/Documents/htdocs/thaisport/public_html/admin_back_office/catalog/setup.php'); 
-		require_once('/Users/charoenlapanatamsombat/Documents/htdocs/thaisport/lib/system/loader/autoload.php');
+		require_once($_SERVER['DOCUMENT_ROOT'].'/thaisport/config/domains/thaisport/config.php'); 
+		require_once($_SERVER['DOCUMENT_ROOT'].'/thaisport/lib/function/main_function.php');
+		require_once($_SERVER['DOCUMENT_ROOT'].'/thaisport/public_html/admin_back_office/catalog/setup.php'); 
+		require_once($_SERVER['DOCUMENT_ROOT'].'/thaisport/lib/system/loader/autoload.php');
 	}else{
 		require_once('/home/thaisport/domains/thaisport-stadium.com/config/domains/thaisport/config.php'); 
 		require_once('/home/thaisport/domains/thaisport-stadium.com/lib/function/main_function.php');
