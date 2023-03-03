@@ -244,7 +244,7 @@ class db{
 		}
 		// echo "test";
 		// var_dump($sql->rows); exit();
-    	return $sql;
+    	return $sql; 
     }
     public function update($table,$input,$where='',$prefix=true){
     	$result = false;
