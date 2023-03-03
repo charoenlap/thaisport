@@ -20,12 +20,12 @@
 		    		$muntiImages = array();
 		    		$file = (isset($_FILES['banner'])?$_FILES['banner']:'');
 		    		if(isset($_FILES['banner'])){
-			    		$banner = time()."_".$_FILES['banner']['name'];
+			    		$banner = time()."_".str_replace(' ', '_', $_FILES['banner']['name']);
 			    		upload( $_FILES['banner'],'../uploads/content/',$banner);
 			    	}
 			    	$file = $_FILES['cover'];
 		    		if(isset($_FILES['cover'])){
-			    		$cover = time()."_".$_FILES['cover']['name'];
+			    		$cover = time()."_".str_replace(' ', '_', $_FILES['cover']['name']);
 			    		upload( $_FILES['cover'],'../uploads/content/',$cover);
 			    	}
 			    	if(isset($_FILES['files'])){

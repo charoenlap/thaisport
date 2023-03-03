@@ -12,15 +12,16 @@
 				$data['banners'][] = array(
 					'id' 		=> $val['id'],
 					'title' 	=> $val['title'],
-					'detail'	=> mb_strimwidth($val['detail'], 0, 100, "..."),
+					'detail'	=> mb_strimwidth(strip_tags($val['detail']), 0, 100, "..."),
 					'banner'	=> $val['banner'],
 					'cover'		=> $val['cover'],
 					'ref_content_sub_id'		=> $val['ref_content_sub_id'],
-					'images'	=> $images
+					'images'	=> $images,
+					'date_create'		=> $val['date_create'],
 				);
 			}
-	    	$data['event'] = $this->model('master')->getNearEvent();
-	    	$data['highlight'] = array();//$this->model('master')->getHighlight(" limit 0,3");
+	    	$data['events'] = $this->model('master')->getNearEvent();
+	    	$data['highlights'] = array();//$this->model('master')->getHighlight(" limit 0,3");
  	    	$this->view('home',$data); 
 	    }
 	    public function highlight() {
