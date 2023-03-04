@@ -7,7 +7,7 @@
 				<nav aria-label="breadcrumb">
 				  <ol class="breadcrumb">
 				    <li class="breadcrumb-item"><a href="#">หน้าหลัก</a></li>
-				    <li class="breadcrumb-item"><a href="#">บทความข่าวสาร</a></li>
+				    <li class="breadcrumb-item"><a href="#">ข่าว & ชมย้อนหลัง</a></li>
 				    <li class="breadcrumb-item active" aria-current="page"><?php echo $title;?></li>
 				  </ol>
 				</nav>
@@ -31,6 +31,15 @@
 		</div>
 		<div class="row mt-2">
 			<div class="col-2">
+				<label for="">URL link</label>
+			</div>
+			<div class="col-10">
+				<input type="text" class="form-control" name="url" value="<?php echo (isset($detail['url'])?$detail['url']:'');?>">
+				* ถ้าใส่ช่องนี้จะนำไปแสดงที่ หมวดย้อนหลัง
+			</div>
+		</div>
+		<div class="row mt-2">
+			<div class="col-2">
 				<label for="">แสดงที่หน้าหลัก</label>
 			</div>
 			<div class="col-10">
@@ -50,7 +59,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row mt-2">
+		<!--<div class="row mt-2">
 			<div class="col-2">
 				<label for="">รูปปก</label>
 			</div>
@@ -63,6 +72,7 @@
 				</div>
 			</div>
 		</div>
+		-->
 		<div class="row mt-2 mb-4">
 			<input type="submit" class="btn btn-primary btn-block">
 		</div>

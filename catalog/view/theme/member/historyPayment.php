@@ -1,4 +1,11 @@
-<header class="ct-page-header ct-u-scratches--bottom ct-u-scratches--inner ct-u-background--black">
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="<?php echo route('member/historyPayment');?>">ประวัติการชำระเงิน</a>
+    <a class="navbar-brand" href="<?php echo route('member/agency');?>">เอเย่น</a>
+    <a class="navbar-brand" href="<?php echo route('member/logout');?>">ออกจากระบบ</a>
+  </nav>
+</div>
+<header class="ct-page-header ct-u-scratches--bottom ct-u-scratches--inner ct-u-background--black mt-4">
     <div class="inner">
         <div class="container">
             <div class="row">

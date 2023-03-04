@@ -11,13 +11,13 @@
                                 <div class="banner-wrap justify-content-between align-items-center">
                                     <div class="left-wrap">
                                         <h2><?php echo $banner['title'];?></h2>
-                                        <?php echo $banner['detail'];?>
+                                        <div style="color:#fff"><?php echo $banner['detail'];?></div>
                                         <!-- <span class="tag"><b>วันอาทิตย์ที่ 26 กุมภาพันธ์ 2566</b></span>
                                         <p>ซุ้ม บ้านเมืองนนท์ VS ซุ้ม บ่อทอง ฟาร์ม</p> -->
                                         <a href="<?php echo route('home/live&id='.$banner['id']);?>" class="btn btn-lg">
                                         <img src="assets/images/play.png" alt="icn">เข้าชม</a>
                                     </div>
-                                    <div class="right-wrap" style="background-image: url(uploads/content/<?php echo $banner['cover'];?>);background-position: center;" onclick="window.location='<?php echo route('home/live');?>'"></div>
+                                    <div class="right-wrap" style="background-image: url(uploads/content/<?php echo $banner['cover'];?>);background-position: center;" onclick="window.location='<?php echo route('home/live&id='.$banner['id']);?>'"></div>
                                 </div>
                             </div>
                             <?php } ?>
@@ -33,6 +33,7 @@
         </div>
         <!-- banenr wrapper -->
         <!-- slider wrapper -->
+        <?php if($blogs){?>
         <div class="slide-wrapper">
             <div class="container">
                 <div class="row">
@@ -63,6 +64,7 @@
                 </div>
             </div>
         </div>
+        <?php } ?>
         <!-- slider wrapper -->
         <!-- slider wrapper -->
         <div class="slide-wrapper">

@@ -120,8 +120,16 @@
             return $query->row;
         }
         // therdthai
+        public function getDetailContentSub($id=0){
+            $query = $this->query("SELECT * FROM gs_content_sub WHERE id='".(int)$id."'"); 
+            return $query->rows;
+        }
         public function getListContentSub(){
-            $query = $this->query("SELECT * FROM gs_content_sub WHERE id_content = 6 AND MONTH(date_start) >= MONTH(NOW()) AND DAY(date_start) >= DAY(NOW()) "); 
+            $query = $this->query("SELECT * FROM gs_content_sub WHERE MONTH(date_start) >= MONTH(NOW()) AND DAY(date_start) >= DAY(NOW())  GROUP BY id_content ORDER BY gs_content_sub.id DESC"); 
+            return $query->rows;
+        }
+        public function getAllListContentSub(){
+            $query = $this->query("SELECT * FROM gs_content_sub ORDER BY gs_content_sub.id DESC"); 
             return $query->rows;
         }
         public function getContentSubView($id=0){
@@ -299,7 +307,8 @@
         public function getListBanner(){
             // OR gs_news.id = 99
             $sql = "SELECT *,
-            gs_news.id AS id,
+            gs_content_sub.id AS id,
+            gs_news.id AS news_id,
             gs_news.detail AS detail,
             gs_news.cover AS cover,
             gs_news.title AS title,
