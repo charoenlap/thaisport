@@ -15,100 +15,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h2 class="mb-3">ไฮไลท์</h2>
+                        <h2 class="mb-3">ทั้งหมด</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-6 col-4">
-                        <a class="slide-one" href="<?php echo route('home/live'); ?>">
-                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
-                            <div class="slide-content">
-                                <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
-                                <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                <span class="tag">2 h 20 min</span>
-                                <span class="tag">2020</span>
-                                <span class="tag"><b>HD</b></span>
-                                <span class="tag"><b>16+</b></span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xs-6 col-4">
-                        <a class="slide-one" href="<?php echo route('home/live'); ?>">
-                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
-                            <div class="slide-content">
-                                <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
-                                <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                <span class="tag">2 h 20 min</span>
-                                <span class="tag">2020</span>
-                                <span class="tag"><b>HD</b></span>
-                                <span class="tag"><b>16+</b></span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xs-6 col-4">
-                        <a class="slide-one" href="<?php echo route('home/live'); ?>">
-                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
-                            <div class="slide-content">
-                                <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
-                                <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                <span class="tag">2 h 20 min</span>
-                                <span class="tag">2020</span>
-                                <span class="tag"><b>HD</b></span>
-                                <span class="tag"><b>16+</b></span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="slide-wrapper search-wrap-slide">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h2 class="mb-3">เพิ่มเติม</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6 col-4">
-                        <a class="slide-one" href="<?php echo route('home/live'); ?>">
-                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
-                            <div class="slide-content">
-                                <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
-                                <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                <span class="tag">2 h 20 min</span>
-                                <span class="tag">2020</span>
-                                <span class="tag"><b>HD</b></span>
-                                <span class="tag"><b>16+</b></span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xs-6 col-4">
-                        <a class="slide-one" href="<?php echo route('home/live'); ?>">
-                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
-                            <div class="slide-content">
-                                <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
-                                <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                <span class="tag">2 h 20 min</span>
-                                <span class="tag">2020</span>
-                                <span class="tag"><b>HD</b></span>
-                                <span class="tag"><b>16+</b></span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xs-6 col-4">
-                        <a class="slide-one" href="<?php echo route('home/live'); ?>">
-                            <div class="slide-image"><img src="assets/images/s5.jpg" alt="image"></div>
-                            <div class="slide-content">
-                                <h2>Made in haven <img src="assets/images/plus.png" alt="icon"></h2>
-                                <p>Radhe is a singing prodigy determined to follow in the classical footsteps of his grandfather.</p>
-                                <span class="tag">2 h 20 min</span>
-                                <span class="tag">2020</span>
-                                <span class="tag"><b>HD</b></span>
-                                <span class="tag"><b>16+</b></span>
-                            </div>
-                        </a>
-                    </div>
+                    <?php foreach($blogs as $val){?>
+                        <div class="col-xs-6 col-4">
+                            <a class="slide-one" href="<?php echo route('home/blogDetail&id='.$val['id']); ?>">
+                                <div class="slide-image"><img src="uploads/content/<?php echo $val['cover'];?>" alt="image"></div>
+                                <div class="slide-content">
+                                    <h2><?php echo $val['title'];?></h2>
+                                    <div><?php echo $val['detail'];?></div>
+                                </div>
+                            </a>
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
         </div>

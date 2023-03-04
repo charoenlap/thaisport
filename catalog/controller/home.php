@@ -6,7 +6,7 @@
 	    	$data['descreption'] = "";
 	    	$data['blogs'] = $this->model('master')->blogs();
 	    	$banners = $this->model('master')->getListBanner();
-
+			$data['banners'] = array();
 	    	foreach($banners as $val){
 		    	$images = $this->model('master')->getListContentSubImage($val['ref_content_sub_id']);
 				$data['banners'][] = array(
@@ -36,8 +36,9 @@
 	    	$data = array();
 	    	$data['title'] = "";
 	    	$data['descreption'] = "";
-	    	
-	    	// $data['live'] = array();//$this->model('master')->getHighlight();
+	    	$id = (int)get('id');
+	    	$data['detail'] = $this->model('master')->getContentSub($id);
+			$data['list_content_sub'] = $this->model('master')->getListContentSub();
  	    	$this->view('live',$data); 
 	    }
 	    public function timeline() {
@@ -59,8 +60,30 @@
 	    	// $data['cover'] 	= $result['cover'];
 	    	// $data['banner'] 	= $result['banner'];
 	    	// $data['muay'] = $this->model('master')->getMuay();
-	    	// $data['muays'] = $this->model('master')->getMuaySub($id);
+	    	$data['list_all'] = $this->model('master')->getAllListContentSub($id);
  	    	$this->view('page',$data); 
+	    }
+		// public function pageDetail() {
+	    // 	$data = array();
+	    // 	$data['title'] = "";
+	    // 	$data['descreption'] = "";
+	    // 	$id = (int)get('id');
+	    // 	// $result = $this->model('master')->muayDetail($id);
+	    // 	// $data['title'] 	= $result['title'];
+	    // 	// $data['detail'] = $result['detail'];
+	    // 	// $data['cover'] 	= $result['cover'];
+	    // 	// $data['banner'] 	= $result['banner'];
+	    // 	// $data['muay'] = $this->model('master')->getMuay();
+	    // 	$data['detail'] = $this->model('master')->getDetailContentSub($id);
+ 	    // 	$this->view('page',$data); 
+	    // }
+		public function book() {
+	    	$data = array();
+	    	$data['title'] = "";
+	    	$data['descreption'] = "";
+	    	// $id = (int)get('id');
+			$data['list_all'] = $this->model('master')->getListContentSub();
+ 	    	$this->view('book',$data); 
 	    }
 	    public function pageDetail() {
 	    	$data = array();
@@ -82,8 +105,8 @@
 	    	$data['title'] = "";
 	    	$data['descreption'] = "";
 	    	$id = get('id');
-	    	/*$data['blog'] = $this->model('master')->blogDetail($id);
-	    	$data['images'] = $this->model('master')->getListContentSubImage($data['blog']['ref_content_sub_id']);*/
+	    	$data['blog'] = $this->model('master')->blogDetail($id);
+	    	/*$data['images'] = $this->model('master')->getListContentSubImage($data['blog']['ref_content_sub_id']);*/
  	    	$this->view('blogDetail',$data); 
 	    }
 	    public function terms() {

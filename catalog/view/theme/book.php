@@ -4,8 +4,8 @@
                 <div class="row">
                     <div class="col-sm-12 text-center">
                         <div class="search-wrapper">
-                            <h2 class="mb-3">ชมย้อนหลัง</h2>
-                            <p class="mb-0">สามารถชมได้ตลอดเวลา</p>
+                            <h2 class="mb-3">ซื้อตั๋วล่วงหน้า</h2>
+                            <p class="mb-0">สามารถชมได้ตามรายละเอียดที่กำหนด</p>
                         </div>
                     </div>
                 </div>
@@ -15,7 +15,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h2 class="mb-3">ชมย้อนหลัง</h2>
+                        <h2 class="mb-3">ซื้อตั๋วล่วงหน้า</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -33,7 +33,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <?php /* ?><header class="ct-page-header ct-u-scratches--bottom ct-u-scratches--inner ct-u-background--black" style="background-image: url(uploads/content/<?php echo $cover; ?>);background-size: cover;">
     <div class="inner">

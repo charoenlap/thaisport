@@ -34,7 +34,7 @@
                         </a>
                         
                         <?php if($username){ ?>
-                            <a class="nav-link mobile" href="<?php echo route('member/login');?>"><?php echo $username; ?></a>
+                            <a class="nav-link mobile" href="<?php echo route('member/login');?>"><?php echo mb_strimwidth($username,0,10,'..','utf8'); ?></a>
                         <?php }else{?>
                             <a class="nav-link mobile" href="<?php echo route('member/login');?>">สมาชิก</a>
                         <?php } ?>
@@ -57,10 +57,13 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo route('home/page');?>">ชมย้อนหลัง</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo route('home/book');?>">ซื้อตั๋วล่วงหน้า</a>
+                                </li>
                                 <?php if($username){ ?>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo route('member/historyPayment');?>">
-                                        <?php echo $username; ?>
+                                        <?php echo mb_strimwidth($username,0,10,'..','utf8'); ?>
                                     </a>
                                 </li>
                                 <?php }else{?>

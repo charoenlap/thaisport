@@ -26,6 +26,7 @@
 			    		'title'			=> post('title'),
 						'detail'		=> post('detail'),
 						'show'			=> post('show'),
+						'url'			=> post('url'),
 						'date_create' 	=> date('Y-m-d H:i:s')
 			    	);
 			    	if($name){
@@ -65,6 +66,7 @@
 			    		'title'			=> post('title'),
 						'detail'		=> post('detail'),
 						'show'			=> post('show'),
+						'url'			=> post('url'),
 						'date_create' 	=> date('Y-m-d H:i:s')
 			    	);
 			    	if(isset($_FILES['cover']['name'])){
