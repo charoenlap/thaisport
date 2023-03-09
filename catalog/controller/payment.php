@@ -1,5 +1,68 @@
 <?php 
 	class PaymentController extends Controller {
+		public function gbPrimePay(){
+			$data_payment = array(
+				'public_key' => 'ghetIuSN8qDL8PtYzzCReTDY9wJ9sWR6',
+				'secret_key' => 'eQlAjbS2DNCRWQ4eLbsnDrLAAqiTqoTm',
+				'token'		 => 'G3+9BhJBKt2UmOHDu83bFUaG3C/mzYnSvowEurDSjGMf+BX0gqdIUPwoudFn6NjAPdUCHaG1JF6LJD3nfeLHwQySdAsBxNrDUPr4m8ud4mUoaTPbD3RGRUKrFzQ3oCGlZOrfm9wO2N8x+HR62kyy2pbvBjPHDGec6ABDLXxrfgMjePF4'
+			);
+			// if(method_post()){
+			
+
+			// isset( $_POST['itemamount'] ) ? $itemamount = $_POST['itemamount'] : $itemamount = "";
+			$request_headers = array(
+				"Cache-Control: no-cache",
+			);
+			$itemamount = 1;
+			if( !empty( $itemamount ) ) {
+				$env = "https://api.gbprimepay.com/";
+
+				$token = $data_payment['token'];
+				// echo $token;
+				$tokenKey = rawurlencode($data_payment['token']);      
+				$referenceNo = "ts".time().rand(10,99);
+				$field = 'token='.$tokenKey.'&referenceNo='.$referenceNo.'&amount='.$itemamount.'&backgroundUrl=http://thaisport-stadium.com/index.php?route=payment/submitgbPrimePay';
+				$url = $env."/v3/qrcode";
+ 
+				// curl api grcode
+				$ch = curl_init();
+				curl_setopt($ch, CURLOPT_URL, $url);
+				curl_setopt($ch, CURLOPT_POST, 1);
+				curl_setopt($ch, CURLOPT_POSTFIELDS, $field);
+				curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+				curl_setopt($ch, CURLINFO_HEADER_OUT, true);
+				curl_setopt($ch, CURLOPT_ENCODING, "");
+				curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+				curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+				curl_setopt($ch, CURLOPT_HTTPHEADER, $request_headers);
+				$output = curl_exec($ch);
+				curl_close($ch);
+				// var_dump($output);
+				// encode output from api 
+				$body = 'data:image/png;base64,' . base64_encode($output) . '';
+				
+
+				// output img qrcode by html
+				echo '<img src="' . $body . '"  style="padding:0px 0px 120px 0px;windth:100%;" class="aligncenter size-full" />';
+			}
+			// }
+		}
+		public function submitgbPrimePay(){
+			$respFile = fopen(PATH_JSON."resp-log.txt", "w") or die("Unable to open file!");
+
+			$json_str = file_get_contents('php://input');
+			fwrite($respFile, $json_str . "\n\n");
+
+			$json_obj = json_decode($json_str);
+
+			fwrite($respFile, "resultCode=" . $json_obj->resultCode . "\n");
+			fwrite($respFile, "amount=" . $json_obj->amount . "\n");
+			fwrite($respFile, "referenceNo=" . $json_obj->referenceNo . "\n");
+			fwrite($respFile, "gbpReferenceNo=" . $json_obj->gbpReferenceNo . "\n");
+			fwrite($respFile, "currencyCode=" . $json_obj->currencyCode . "\n");
+
+			fclose($respFile);
+		}
 		public function index() {
 			// exit();
 	    	$data = array();

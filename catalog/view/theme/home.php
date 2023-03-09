@@ -71,7 +71,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 text-left mb-4 mt-1">
-                        <h2>รายการล่าสุด</h2>
+                        <h2>รายการแข่งขันล่วงหน้า</h2>
                     </div>
                 </div>
                 <div class="row">
