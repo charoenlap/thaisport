@@ -22,6 +22,11 @@
                     </form>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12 text-center mt-4">
+                    <a href="<?php echo route('home');?>" class="btn btn-default">กลับ</a>
+                </div>
+            </div>
         </div>
         <div class="ct-u-padding-top-80 hidden-xs"></div>
     </section>

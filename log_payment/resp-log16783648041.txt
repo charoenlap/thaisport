@@ -1,0 +1,7 @@
+{"amount":1.00,"retryFlag":"N","referenceNo":"ts167836478411","gbpReferenceNo":"gbp139901105376230","currencyCode":"764","resultCode":"00","resultMessage":null,"token":null,"totalAmount":1.00,"fee":0.01,"vat":0.00070,"thbAmount":1.00,"customerName":"นาย เจริญลาภ อนะธรรมสมบัติ","date":"09032023","time":"192643","paymentType":"Q","mobileNo":null,"bankCode":null,"registerAccount":null,"tokenAccount":null,"registerDate":null,"registerTime":null,"accountUnmask":null}
+
+resultCode=00
+amount=1
+referenceNo=ts167836478411
+gbpReferenceNo=gbp139901105376230
+currencyCode=764

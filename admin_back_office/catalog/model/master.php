@@ -1,5 +1,11 @@
 <?php 
     class MasterModel extends db {
+        public function getAgency($id=0){
+            $result = array();
+            $sql = "SELECT * FROM gs_member WHERE gs_member.`ref_id` = ".(int)$id;
+            $result = $this->query($sql)->rows;
+            return $result;
+        }
         public function checkActive($id=0){
             $result = array();
             $sql = "SELECT * FROM gs_member_history 
@@ -253,7 +259,79 @@
             return $query->row;
         }
         public function getListNews($id=0){
-            $sql = "SELECT * FROM gs_news  WHERE del<>1 ORDER BY id DESC";
+            $sql = "SELECT * FROM gs_news  WHERE del<>1 AND `url`='' ORDER BY id DESC";
+            $query = $this->query($sql); 
+            return $query->rows;
+        }
+        
+        public function insertReplay($data=array()){
+            $query = $this->insert("news",$data); 
+            return $query;
+        }
+        public function updateReplay($data=array(),$id=0){
+            $query = $this->update("news",$data,"id = '".$id."'"); 
+            return $query;
+        }
+        public function delReplay($id=0){
+            $query = $this->update("news",array('del'=>'1'),"id = '".(int)$id."'"); 
+            // $query = $this->delete("news","id = '".(int)$id."'"); 
+            return $query;
+        }
+        public function getReplay($id=0){
+            $sql = "SELECT * FROM gs_news WHERE id = '".(int)$id."' AND del<>1";
+            $query = $this->query($sql); 
+            return $query->row;
+        }
+        public function getListReplay($id=0){
+            $sql = "SELECT * FROM gs_news  WHERE `url`<>'' AND del<>1 ORDER BY id DESC";
+            $query = $this->query($sql); 
+            return $query->rows;
+        }
+
+        public function insertSponser($data=array()){
+            $query = $this->insert("sponser",$data); 
+            return $query;
+        }
+        public function updateSponser($data=array(),$id=0){
+            $query = $this->update("sponser",$data,"id = '".$id."'"); 
+            return $query;
+        }
+        public function delSponser($id=0){
+            $query = $this->update("sponser",array('del'=>'1'),"id = '".(int)$id."'"); 
+            // $query = $this->delete("sponser","id = '".(int)$id."'"); 
+            return $query;
+        }
+        public function getSponser($id=0){
+            $sql = "SELECT * FROM gs_sponser WHERE id = '".(int)$id."' AND del<>1";
+            $query = $this->query($sql); 
+            return $query->row;
+        }
+        public function getListSponser($id=0){
+            $sql = "SELECT * FROM gs_sponser  WHERE del<>1 ORDER BY id DESC";
+            $query = $this->query($sql); 
+            return $query->rows;
+        }
+
+        public function insertMarquee($data=array()){
+            $query = $this->insert("marquee",$data); 
+            return $query;
+        }
+        public function updateMarquee($data=array(),$id=0){
+            $query = $this->update("marquee",$data,"id = '".$id."'"); 
+            return $query;
+        }
+        public function delMarquee($id=0){
+            $query = $this->update("marquee",array('del'=>'1'),"id = '".(int)$id."'"); 
+            // $query = $this->delete("marquee","id = '".(int)$id."'"); 
+            return $query;
+        }
+        public function getMarquee($id=0){
+            $sql = "SELECT * FROM gs_marquee WHERE id = '".(int)$id."' AND del<>1";
+            $query = $this->query($sql); 
+            return $query->row;
+        }
+        public function getListMarquee($id=0){
+            $sql = "SELECT * FROM gs_marquee  WHERE del<>1 ORDER BY id DESC";
             $query = $this->query($sql); 
             return $query->rows;
         }

@@ -61,23 +61,37 @@
 			    			$this->model('master')->imageInsert($image_insert,$id_content_sub);
 			    		}
 			    	}
-			    	$chkHome = post('chkHome');
-			    	if($chkHome){
-			    		$insert = array(
-				    		'title'					=> post('title'),
-							'detail'				=> post('detail'),
-							'show'					=> 1,
-							'ref_content_sub_id'	=> $id_content_sub,
-							'date_create' 			=> date('Y-m-d H:i:s')
-				    	);
-				    	if($banner){
-				    		$insert['banner'] = $banner;
-				    	}
-				    	if($cover){
-				    		$insert['cover'] = $cover;
-				    	}
-			    		$this->model('master')->insertNews($insert);
-			    	}
+					$insert = array(
+				    	'title'					=> post('title'),
+						'detail'				=> post('detail'),
+						'show'					=> 1,
+						'ref_content_sub_id'	=> $id_content_sub,
+						'date_create' 			=> date('Y-m-d H:i:s')
+				    );
+				    if($banner){
+				    	$insert['banner'] = $banner;
+				    }
+				    if($cover){
+				    	$insert['cover'] = $cover;
+				    }
+			    	$this->model('master')->insertNews($insert);
+			    	// $chkHome = post('chkHome');
+			    	// if($chkHome){
+			    	// 	$insert = array(
+				    // 		'title'					=> post('title'),
+					// 		'detail'				=> post('detail'),
+					// 		'show'					=> 1,
+					// 		'ref_content_sub_id'	=> $id_content_sub,
+					// 		'date_create' 			=> date('Y-m-d H:i:s')
+				    // 	);
+				    // 	if($banner){
+				    // 		$insert['banner'] = $banner;
+				    // 	}
+				    // 	if($cover){
+				    // 		$insert['cover'] = $cover;
+				    // 	}
+			    	// 	$this->model('master')->insertNews($insert);
+			    	// }
 			    	redirect('muay&id_content='.post('id_content'));
 		    	}else{
 		    		$data['title'] = 'เพิ่ม';
@@ -147,23 +161,23 @@
 			    	}
 			    	// $id_content_sub = $this->model('master')->insertContentSub($insert);
 			    	$id_content_sub = $id;
-			    	$chkHome = post('chkHome');
-			    	if($chkHome){
-			    		$insert = array(
-				    		'title'					=> post('title'),
-							'detail'				=> post('detail'),
-							'show'					=> 1,
-							'ref_content_sub_id'	=> $id_content_sub,
-							'date_create' 			=> date('Y-m-d H:i:s')
-				    	);
-				    	if($banner){
-				    		$insert['banner'] = $banner;
-				    	}
-				    	if($cover){
-				    		$insert['cover'] = $cover;
-				    	}
-			    		$this->model('master')->insertNews($insert);
-			    	}
+			    	// $chkHome = post('chkHome');
+			    	// if($chkHome){
+			    	// 	$insert = array(
+				    // 		'title'					=> post('title'),
+					// 		'detail'				=> post('detail'),
+					// 		'show'					=> 1,
+					// 		'ref_content_sub_id'	=> $id_content_sub,
+					// 		'date_create' 			=> date('Y-m-d H:i:s')
+				    // 	);
+				    // 	if($banner){
+				    // 		$insert['banner'] = $banner;
+				    // 	}
+				    // 	if($cover){
+				    // 		$insert['cover'] = $cover;
+				    // 	}
+			    	// 	// $this->model('master')->insertNews($insert);
+			    	// }
 			    	redirect('muay&id_content='.$id_content);
 		    	}else{
 		    		$data['title'] = 'แก้ไข';

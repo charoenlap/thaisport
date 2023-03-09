@@ -7,23 +7,20 @@
                         <ul class="member-ul">
                             <li class="active"><a href="#"><span>01</span><b>แสกน QR Code</b></a></li>
                             <li><a href="#"><span>02</span><b>ยืนยันการชำระเงิน</b></a></li>
-                            <li><a href="#"><span>03</span><b>สำเร็จ</b></a></li>
+                            <li id="tab-index3"><a href="#"><span>03</span><b>สำเร็จ</b></a></li>
                         </ul>
                         <div class="form-div member-1 p-4 text-center mb-4">
                             <div class="price-wrap">
                                 <div class="left-price">
-                                    <img src="images/exqrcode.jpg" alt="icon" style="width:100%;height:auto;">
-                                    <h2>100 <i>฿</i></h2>
-                                    <h4></h4>
+                                    <img src="<?php echo $body;?>" alt="icon" style="width:100%;height:auto;">
                                 </div>
                                 <div class="middle-price">
-                                    <h6>ซุ้ม ลานไม้วุฒิพงษ์ VS ซุ้ม พญาบ้านดอน</h6>
-                                    <h6>วันอาทิตย์ที่ 31 กรกฎาคม 2565</h6>
-                                    <h6>ชิง 2,200,000</h6>
+                                    <h6><?php echo strip_tags($detail['title']);?></h6>
+                                    <?php echo strip_tags($detail['detail']);?>
+                                    <input type="hidden" id="referenceNo" value="<?php echo $referenceNo;?>">
                                 </div>
                                 <div class="right-price ">
-                                    <a href="#" class="btn member-bttn2">ยืนยัน</a>
-                                    <!-- <span>include tax *</span> -->
+                                    <a href="#" class="btn member-bttn2" id="btn-confirm-qr">ยืนยัน</a>
                                 </div>
                             </div>
                         </div>
@@ -32,7 +29,7 @@
                             <p>ระบบกำลังตรวจสอบรายการชำระเงิน</p>
                             <form action="#">
                                 <div class="form-group button-block text-center">
-                                  <button class="form-btn member-bttn3">ต่อไป</button>
+                                  <button class="" id="btn-next-step-2" disabled="disabled">กำลังตรวจสอบรายการ</button>
                                 </div>
                                 
                             </form>
@@ -40,7 +37,7 @@
 
                         <div class="form-div member-3 text-center mb-4" style="display: none;">
                             <h2>สำเร็จ</h2>
-                            <p >ท่านสามารถรับชมได้โดย <a href="<?php echo route('home/live');?>">คลิกที่นี่</a></p>
+                            <p >ท่านสามารถรับชมได้โดย <a href="<?php echo route('home/live&id='.$id_content);?>">คลิกที่นี่</a></p>
                         </div>
 
                     </div>
@@ -51,6 +48,42 @@
 
 
     </div>
+<script>
+    $(function(e){
+        $('#btn-confirm-qr').on('click',function(e){
+            setInterval(function () {
+            $.ajax({
+                url: 'index.php?route=payment/checkPayment',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    referenceNo: $('#referenceNo').val()
+                },
+            })
+            .done(function(json) {
+                if(json.result){
+                    $('.member-2').css('display','none');
+                    $('.member-3').css('display','block');
+                    $('#tab-index3').addClass('active');
+                    // $('#btn-next-step-2').addClass('btn member-bttn');
+                    // $('#btn-next-step-2').text('ยืนยันเรียบร้อย กดเพื่อดำเนินการต่อ');
+                    
+                    // $('#btn-next-step-2').prop("disabled", false);
+                    // $('#btn-next-step-2').trigger('click');
+                    // console.log("success");
+                    clearInterval(refreshId);
+                }
+            })
+            .fail(function() {
+                console.log("error");
+            })
+            .always(function() {
+                // console.log("complete");
+            });
+        }, 1500);
+        });
+    });
+</script>
 <?php /* ?><header class="ct-page-header ct-u-scratches--bottom ct-u-scratches--inner ct-u-background--black">
     <div class="inner">
         <div class="container">

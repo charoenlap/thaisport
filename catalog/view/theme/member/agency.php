@@ -26,20 +26,20 @@
                     <p class="text-danger">*เงื่อนไขการส่งต่อลิงก์ ผู้ที่ส่งต่อจะต้องเป็นสมาชิก ในระบบ</p>
                 </div>
             </div> -->
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-3">
                     ลิงก์การสมัครสมาชิก 
                 </div>
                 <div class="col-md-8">
                     <?php 
-                        $link_ref = "http://thaisport-stadium.com/index.php?route=member/register&ref=".encode($username,'lap');
+                        $link_ref = '';//"http://thaisport-stadium.com/index.php?route=member/register&ref=".encode($username,'lap');
                     ?>
                     <input type="text" class="form-control" id="myInput" value="<?php echo $link_ref;?>" style="text-transform: lowercase;"> 
                 </div>
                 <div class="col-md-1">
                     <input type="button"  class="btn btn-primary" value="คัดลอกลิงก์" onclick="myFunction()">
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="row">
                 <div class="col-md-12">
                     <p class="text-right">สถานะตอนนี้ <b><span class="<?php echo $status;?>"><?php echo $status_active; ?></span></b></p>

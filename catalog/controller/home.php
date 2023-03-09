@@ -5,8 +5,9 @@
 	    	$data['title'] = "";
 	    	$data['descreption'] = "";
 	    	$data['blogs'] = $this->model('master')->blogs();
-	    	$banners = $this->model('master')->getListBanner();
 			$data['banners'] = array();
+	    	$banners = $this->model('master')->getListBanner();
+			// var_dump($banners);exit();
 	    	foreach($banners as $val){
 		    	$images = $this->model('master')->getListContentSubImage($val['ref_content_sub_id']);
 				$data['banners'][] = array(
@@ -21,6 +22,9 @@
 				);
 			}
 	    	$data['events'] = $this->model('master')->getNearEvent();
+			$data['marquee'] = $this->model('master')->getMarquee(1);
+			$data['sponser'] = $this->model('master')->getListSponser();
+			// var_dump($data['marquee']);
 	    	$data['highlights'] = array();//$this->model('master')->getHighlight(" limit 0,3");
  	    	$this->view('home',$data); 
 	    }
@@ -34,12 +38,25 @@
 	    }
 	    public function live() {
 	    	$data = array();
-	    	$data['title'] = "";
-	    	$data['descreption'] = "";
-	    	$id = (int)get('id');
-	    	$data['detail'] = $this->model('master')->getContentSub($id);
-			$data['list_content_sub'] = $this->model('master')->getListContentSub();
- 	    	$this->view('live',$data); 
+			$id_user 	= $this->getSession('id_user');
+			$username 	= $this->getSession('username');
+			$id_content = (int)get('id');
+			if(!empty($id_user) AND !empty($username)){
+				$checkActive = $this->model('master')->checkActiveContent($id_user,$id_content);
+				// var_dump($checkActive);exit();
+				if($checkActive){
+					$data['title'] = "";
+					$data['descreption'] = "";
+					$id = (int)get('id');
+					$data['detail'] = $this->model('master')->getContentSub($id);
+					$data['list_content_sub'] = $this->model('master')->getListContentSub();
+					$this->view('live',$data); 
+				}else{
+					redirect('payment&id_content='.$id_content);
+				}
+			}else{
+				redirect('member/login&result=ยังไม่ได้เข้าสู่ระบบ');
+			}
 	    }
 	    public function timeline() {
 	    	$data = array();
@@ -60,7 +77,7 @@
 	    	// $data['cover'] 	= $result['cover'];
 	    	// $data['banner'] 	= $result['banner'];
 	    	// $data['muay'] = $this->model('master')->getMuay();
-	    	$data['list_all'] = $this->model('master')->getAllListContentSub($id);
+	    	$data['list_all'] = $this->model('master')->getAllListContentSubReplay();
  	    	$this->view('page',$data); 
 	    }
 		// public function pageDetail() {

@@ -37,7 +37,7 @@
 				<input type="text" class="form-control" value="<?php echo (isset($detail['location'])?$detail['location']:'');?>" name="location">
 			</div>
 			<div class="col-2">
-				<label for="">วันที่แสดง</label>
+				<label for="">วันที่แข่ง</label>
 			</div>
 			<div class="col-4">
 				<input type="text" class="form-control" id="datepicker" name="date_start" value="<?php echo (isset($detail['date_start'])?$detail['date_start']:date('Y-m-d'));?>">
@@ -92,14 +92,14 @@
 				</div>
 			</div>
 		</div>
-		<div class="row mt-2">
+		<!-- <div class="row mt-2">
 			<div class="col-2">
 				<label for="">เพิ่มลงหน้าแรก</label>
 			</div>
 			<div class="col-10">
 				<input type="checkbox" name="chkHome" value="1" checked>
 			</div>
-		</div>
+		</div> -->
 		<div class="row mt-2">
 			<div class="col-2">
 				<label for="">เมมเบอร์สมัครใหม่ในวัน ดูฟรีไม่เสียค่าใช้จ่าย</label>

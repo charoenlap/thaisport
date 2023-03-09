@@ -44,17 +44,18 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          ข่าว & ชมย้อนหลัง
+          เนื้อหา
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php echo route('news'); ?>">ดูทั้งหมด</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="<?php echo route('news/add'); ?>">เพิ่ม</a>
+          <a class="dropdown-item" href="<?php echo route('news'); ?>">ข่าว</a>
+          <a class="dropdown-item" href="<?php echo route('replay'); ?>">ย้อนหลัง</a>
+          <a class="dropdown-item" href="<?php echo route('sponser'); ?>">Sponser</a>
+          <a class="dropdown-item" href="<?php echo route('marquee'); ?>">ตัววิ่ง</a>
         </div>
       </li>
       
       
-      <li class="nav-item dropdown">
+      <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           แพคเกจ
         </a>
@@ -63,7 +64,7 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="<?php echo route('package/add'); ?>">เพิ่ม</a>
         </div>
-      </li>
+      </li> -->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           สมาชิก

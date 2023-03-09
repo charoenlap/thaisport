@@ -1,5 +1,14 @@
 <?php 
 	class MasterModel extends db {
+        public function checkPaymentSuccess($referenceNo=''){
+            $result = array();
+            $referenceNo = $this->escape($referenceNo);
+            $result = $this->query("SELECT * FROM gs_callback WHERE billPaymentRef1 = '".$referenceNo."'");
+            return $result->rows;
+        }
+        public function insertMemberPayment($id_user=0,$referenceNo='',$id_content=0){
+            $this->query("INSERT INTO gs_member_payment(`user_id`,`billPaymentRef1`,`date_create`,`id_content`) VALUES ('".$id_user."','".$referenceNo."','".date('Y-m-d H:i:s')."','".(int)$id_content."')");
+        }
         public function getHighlight($limit=''){
             $result = array();
             $result = $this->query("SELECT * FROM gs_highlight ".$limit);
@@ -130,6 +139,10 @@
         }
         public function getAllListContentSub(){
             $query = $this->query("SELECT * FROM gs_content_sub ORDER BY gs_content_sub.id DESC"); 
+            return $query->rows;
+        }
+        public function getAllListContentSubReplay(){
+            $query = $this->query("SELECT * FROM gs_news WHERE `url`<>'' ORDER BY gs_news.id DESC"); 
             return $query->rows;
         }
         public function getContentSubView($id=0){
@@ -265,7 +278,16 @@
             $result_member  = $this->query($sql_member);
             return $result_member->row;
         }
-        public function checkActive($id=0){
+        public function getMemberID($data=array()){
+            $result = '';
+            $username = (isset($data['username'])?$data['username']:'');
+            // $password = (isset($data['password'])?$data['password']:'');
+            $username = $this->escape($username);
+            $sql_member     = "SELECT * FROM gs_member WHERE username = '".$username."'";
+            $result_member  = $this->query($sql_member);
+            return $result_member->row;
+        }
+        public function checkActive($id_user=0){
             $result = array(
                 'days'  => 0,
                 'unit'  => 0,
@@ -273,7 +295,7 @@
             );
             $sql = "SELECT * FROM gs_member_history 
             LEFT JOIN gs_package ON gs_member_history.id_package = gs_package.id 
-            WHERE gs_member_history.id_user = '".(int)$id."' AND date_expired >= '".date('Y-m-d H:i:s')."'";
+            WHERE gs_member_history.id_user = '".(int)$id_user."' AND date_expired >= '".date('Y-m-d H:i:s')."'";
             // echo $sql;exit();
             $query = $this->query($sql);
             $sum_day = 0;
@@ -299,6 +321,26 @@
                 $result['id_content'] = $id_content;
                 $result['id_package'] = $id_package;
 
+            }
+            // $result['sql'] = $sql;
+            return $result;
+        }
+        public function checkActiveContent($id_user=0,$id_content=0){
+            $result = array();
+            // LEFT JOIN gs_package ON gs_member_history.id_package = gs_package.id 
+            $sql = "SELECT * FROM gs_member_history 
+            WHERE gs_member_history.id_user = '".(int)$id_user."' 
+            AND id_content='".(int)$id_content."' 
+            AND date_expired >= '".date('Y-m-d H:i:s')."'";
+            
+            $query = $this->query($sql);
+            $sum_day = 0;
+            $sum_unit = 0;
+            $id_content = array();
+            $id_package = array();
+            // echo $query->num_rows;exit();
+            if($query->num_rows){
+                $result = $query->row;
             }
             // $result['sql'] = $sql;
             return $result;
@@ -341,6 +383,17 @@
             // echo $sql;exit();
             $query = $this->query($sql); 
             return $query->row;
+        }
+        public function getMarquee($id=0){
+            $sql = "SELECT * FROM gs_marquee WHERE id = '".(int)$id."' AND del<>1";
+            $query = $this->query($sql); 
+            return $query->row;
+        }
+
+        public function getListSponser(){
+            $sql = "SELECT * FROM gs_sponser  WHERE del<>1 ORDER BY id DESC";
+            $query = $this->query($sql); 
+            return $query->rows;
         }
 	}
 ?>

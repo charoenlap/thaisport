@@ -46,13 +46,16 @@
 	    	$id_user = $this->getSession('user_id');
 	    	if($id_user){
 		    	if(method_post()){
+					// var_dump($_POST);exit();
 			    	$id = post('id');
 			    	$update = array(
 			    		'username'			=> post('username'),
-						'date_create' 	=> date('Y-m-d H:i:s')
+						'agency'			=> (int)post('agency'),
+						'date_create' 		=> date('Y-m-d H:i:s')
 			    	);
+					// var_dump($update);exit();
 			    	$this->model('master')->updateMember($update,$id);
-			    	redirect('member&id_content='.$id_content);
+			    	redirect('member');
 		    	}else{
 		    		$data['title'] = 'แก้ไข';
 		    		$data['id'] = $id = get('id');
@@ -61,6 +64,7 @@
 		    		$data['package'] = $this->model('master')->getMemberPackage($id);
 		    		$data['banners'] = $this->model('master')->getListBanner();
 		    		$data['test'] = $this->model('master')->checkActive($id);
+					$data['agency_list'] = $this->model('master')->getAgency($id);
 		    		// var_dump($data['test']);
 		    		$this->view('member/form',$data);
 		    	}

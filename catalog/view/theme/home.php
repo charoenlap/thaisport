@@ -26,7 +26,7 @@
                 </div>
                 <div class="row mb-2 mt-2">
                     <div class="col-sm-12">
-                        <marquee behavior="" direction="">วันเวลาของเซิฟเวอร์ <?php echo date('Y-m-d H:i:s');?> สนามกีฬาไก่ชนเทิดไท</marquee>
+                        <marquee behavior="" direction=""><?php echo $marquee['title'];?></marquee>
                     </div>
                 </div>
             </div>
@@ -97,8 +97,16 @@
                 </div>
             </div>
         </div>
+        <?php if($sponser){?>
         <div class="container">
+            <?php foreach($sponser as $val){ ?>
             <div class="row mb-4 mt-4">
+                <div class="col-sm-12">
+                    <img src="<?php echo $val['cover'];?>" class="img-fluid" alt="">
+                </div>
+            </div>
+            <?php } ?>
+            <!-- <div class="row mb-4 mt-4">
                 <div class="col-sm-12">
                     <img src="assets/images/5.jpg" class="img-fluid" alt="">
                 </div>
@@ -107,6 +115,7 @@
                 <div class="col-sm-12">
                     <img src="assets/images/6.jpg" class="img-fluid" alt="" style="width:100%;">
                 </div>
-            </div>
+            </div> -->
         </div>
+        <?php } ?>
     </div>

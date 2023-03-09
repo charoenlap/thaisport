@@ -20,13 +20,48 @@
 				<input type="text" class="form-control" name="username" value="<?php echo (isset($detail['username'])?$detail['username']:'');?>">
 			</div>
 		</div>
+		<div class="row mt-4 mb-4">
+			<div class="col-2">
+				Enable Agency
+			</div>
+			<div class="col-10">
+				<?php $agency = (isset($detail['agency'])?$detail['agency']:'');?>
+				<input type="radio" name="agency" value="1" <?php echo (!empty($agency)?'checked':'');?>> On
+				<input type="radio" name="agency" value="0" <?php echo (empty($agency)?'checked':'');?>> Off
+			</div>
+		</div>
+		<div class="row mt-4 mb-4">
+			<div class="col-2">
+				Agency
+			</div>
+			<div class="col-10">
+				<?php $link = "http://thaisport-stadium.com/index.php?route=member/register&ref=".encode((isset($detail['username'])?$detail['username']:''),'lap');?>
+				<input type="text" class="form-control" value="<?php echo $link;?>">
+			</div>
+		</div>
+		<?php if($agency_list){?>
+		<div class="row mt-4 mb-4">
+			<div class="col-2">
+				List Agency
+			</div>
+			<div class="col-10">
+				<table class="table">
+					<?php foreach($agency_list as $val){?>
+					<tr>
+						<td><?php echo $val['username'];?></td>
+					</tr>
+					<?php } ?>
+				</table>
+			</div>
+		</div>
+		<?php } ?>
 		<div class="row mt-2 mb-4">
 			<input type="submit" class="btn btn-primary btn-block">
 		</div>
 	</form>
 </div>
-<div class="container">
-		<div class="row">
+	<div class="container ">
+		<!-- <div class="row">
 			<div class="col-3">
 				<label for="">แพคเกจ</label>
 				<select name="" id="id_package" class="form-control">
@@ -58,11 +93,11 @@
 			<div class="col-1">
 				<input type="button" class="btn btn-primary" id="add-package" value="เพิ่ม">
 			</div>
-		</div>
+		</div> -->
 	<?php 
 		// echo $sql = "SELECT * FROM gs_member_history LEFT JOIN gs_package ON gs_member_history.id_package = gs_package.id WHERE id_user = '".(int)$id."' AND date_expired >= '".date('Y-m-d H:i:s')."'";
 	?>
-	<div class="row">
+	<!-- <div class="row">
 		<div class="col-12">
 			<table class="table">
 				<thead>
@@ -95,7 +130,7 @@
 				</tbody>
 			</table>
 		</div>
-	</div>
+	</div> -->
 </div>
 <style>
 .tox-notifications-container {
