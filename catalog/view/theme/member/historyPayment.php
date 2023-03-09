@@ -3,7 +3,7 @@
     <a class="navbar-brand" href="<?php echo route('member/historyPayment');?>">ประวัติการชำระเงิน</a>
     <a class="navbar-brand" href="<?php echo route('member/agency');?>">เอเย่น</a>
     <a class="navbar-brand" href="<?php echo route('member/logout');?>">ออกจากระบบ</a>
-  </nav>
+  </nav> 
 </div>
 <header class="ct-page-header ct-u-scratches--bottom ct-u-scratches--inner ct-u-background--black mt-4">
     <div class="inner">
