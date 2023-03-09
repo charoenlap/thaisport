@@ -48,7 +48,8 @@
 			// }
 		}
 		public function submitgbPrimePay(){
-			$respFile = fopen("/home/thaisport/domains/thaisport-stadium.com/public_html/log_payment/resp-log.txt", "w") or die("Unable to open file!");
+			$filename = time().rand(01,99);
+			$respFile = fopen("/home/thaisport/domains/thaisport-stadium.com/public_html/log_payment/resp-log".$filename.".txt", "w") or die("Unable to open file!");
 
 			$json_str = file_get_contents('php://input');
 			fwrite($respFile, $json_str . "\n\n");
