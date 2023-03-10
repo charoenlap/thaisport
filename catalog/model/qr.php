@@ -13,7 +13,7 @@
 			$result = $this->query("SELECT * FROM gs_member_payment WHERE billPaymentRef1='".$billPaymentRef1."'");
 			if($result){
 				// ให้ถึงเที่ยงคืน ของวันที่กำหนด
-				$result_content = $this->query("SELECT DATE_ADD(date_start, INTERVAL 1 DAY) FROM gs_content_sub WHERE id='".$result->row['id_content']."'");
+				$result_content = $this->query("SELECT DATE_ADD(date_start, INTERVAL 1 DAY) AS date_start FROM gs_content_sub WHERE id='".$result->row['id_content']."'");
 				$id_user = $result->row['user_id'];
 				$id_content = $result->row['id_content'];
 				$date_expired = $result_content->row['date_start'];
