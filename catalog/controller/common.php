@@ -10,7 +10,7 @@
 	    	$data['id'] = get('id');
 			$banners = $this->model('master')->getListBannerNow();
 			$data['link_live'] = '';
-			if($banners>1){
+			if($banners->num_rows>1){
 				$data['link_live'] = route('home/live&id='.$banners->row['id']); 
 			}else{
 				$data['link_live'] = route('home/live&id='.$banners->row['id']); 
