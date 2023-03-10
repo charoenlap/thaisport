@@ -273,7 +273,7 @@
 	    		$phone 		= post('phone');
 				$password 	= post('password');
 				$redirect 	= post('redirect');
-				$id_package = post('id_package');
+				// $id_package = post('id_package');
 				$id_content = post('id_content');
 				$para = '';
 				if($id_package){
@@ -296,17 +296,17 @@
 					$this->setSession('token',$token);
 					$this->model('master')->updateToken($result_user['id'],$token);
 					if($redirect){
-						redirect('member/contentView&id_content='.$id_content);
+						redirect('home/live&id='.$id_content);
 					}else{
 						if($id_content){
-							redirect('member/contentView&id_content='.$id_content);
+							redirect('home/live&id='.$id_content);
 						}else{
 							redirect('home');
 						}
 					}
 				}else{
 					$detail = "หาไม่พบ";
-					redirect('member/login&result='.$result.'&detail='.$detail."&redirect=".$redirect."&id_package=".$id_package);
+					redirect('member/login&result='.$result.'&detail='.$detail."&redirect=".$redirect);
 				}
 	    	}
 	    }

@@ -55,7 +55,7 @@
 					redirect('payment&id_content='.$id_content);
 				}
 			}else{
-				redirect('member/login&result=ยังไม่ได้เข้าสู่ระบบ');
+				redirect('member/login&result=ยังไม่ได้เข้าสู่ระบบ&id_content='.$id_content);
 			}
 	    }
 	    public function timeline() {

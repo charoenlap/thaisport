@@ -79,7 +79,7 @@
                         <div class="slide-slider owl-carousel owl-theme">
                             <?php foreach($banners as $banner){?>
                             <div class="owl-items">
-                                <a class="slide-one" href="<?php echo route('home/blogDetail');?>">
+                                <a class="slide-one" href="<?php echo route('home/live&id='.$banner['id']);?>">
                                     <div class="slide-image">
                                         <div  style="background:url(uploads/content/<?php echo $banner['cover'];?>);height:300px;background-position:center;background-size: cover;"></div>
                                     </div>

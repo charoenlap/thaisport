@@ -11,6 +11,7 @@
 					<th></th>
 					<th>Username</th>
 					<th>วันที่เริ่ม</th>
+					<th>สถานะ</th>
 					<th class="text-right">จัดการ</th>
 				</thead>
 				<tbody>
@@ -19,6 +20,7 @@
 						<td><?php echo $i;?></td>
 						<td><?php echo $val['username']; ?></td>
 						<td><?php echo $val['date_create']; ?></td>
+						<td><?php echo ($val['agency']?'Agency':'Normal'); ?></td>
 						<td class="text-right">
 							<a href="#" data-id="<?php echo $val['id'];?>" class="btn btn-info btn-reset">รีเซตรหัสผ่าน</a>
 							<a href="<?php echo route('member/edit&id='.$val['id']);?>" class="btn btn-warning">แก้ไข</a>

@@ -8,6 +8,13 @@
 	    	$data['username'] = $this->getSession('username');
 	    	$data['route'] = get('route');
 	    	$data['id'] = get('id');
+			$banners = $this->model('master')->getListBannerNow();
+			$data['link_live'] = '';
+			if($banners>1){
+				$data['link_live'] = route('home/live&id='.$banners->row['id']); 
+			}else{
+				$data['link_live'] = route('home/live&id='.$banners->row['id']); 
+			}
 	    	$this->render('common/header',$data);
 	    }
 	    public function footer($data=array()){

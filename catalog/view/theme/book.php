@@ -21,7 +21,7 @@
                 <div class="row">
                     <?php foreach($list_all as $val){?>
                     <div class="col-xs-6 col-4">
-                        <a class="slide-one" href="<?php echo route('home/pageDetail&id='.$val['id']); ?>">
+                        <a class="slide-one" href="<?php echo route('home/live&id='.$val['id']);?>">
                             <div class="slide-image"><img src="uploads/content/<?php echo $val['cover'];?>" alt="image"></div>
                             <div class="slide-content">
                                 <h2><?php echo $val['title'];?></h2>

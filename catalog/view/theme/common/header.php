@@ -50,7 +50,7 @@
                                     <a class="nav-link" href="<?php echo route('home');?>">หน้าหลัก</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active-build" href="<?php echo route('home/live');?>">
+                                    <a class="nav-link active-build" href="<?php echo $link_live;?>">
                                          ถ่ายทอดสด
                                     </a>
                                 </li>

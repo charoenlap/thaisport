@@ -125,7 +125,8 @@
             return $query->row;
         }
         public function getContentSub($id_content=0){
-            $query = $this->query("SELECT * FROM gs_content_sub WHERE id = ".(int)$id_content." AND MONTH(date_start) = MONTH(NOW()) AND DAY(date_start) = DAY(NOW()) "); 
+            $sql  ="SELECT * FROM gs_content_sub WHERE id = ".(int)$id_content." AND MONTH(date_start) >= MONTH(NOW()) AND DAY(date_start) >= DAY(NOW()) ";
+            $query = $this->query($sql); 
             return $query->row;
         }
         // therdthai
@@ -377,6 +378,23 @@
             // }
             // echo "<pre>";var_dump($query->rows);exit();
             return $query->rows;
+        }
+        public function getListBannerNow(){
+            // OR gs_news.id = 99
+            $sql = "SELECT *,
+            gs_content_sub.id AS id,
+            gs_news.id AS news_id,
+            gs_news.detail AS detail,
+            gs_news.cover AS cover,
+            gs_news.title AS title,
+            gs_news.date_create AS date_create 
+            FROM gs_news 
+            LEFT JOIN gs_content_sub ON gs_news.ref_content_sub_id = gs_content_sub.id 
+            WHERE 
+            (gs_content_sub.date_start >= NOW() - INTERVAL 1 DAY AND gs_content_sub.del <>1) AND gs_news.del<>1
+            ORDER BY gs_content_sub.date_start DESC  ";
+            $query = $this->query($sql); 
+            return $query;
         }
         public function getNearEvent(){
             $sql = "SELECT * FROM gs_content_sub WHERE date_start >= '".date('Y-m-d')."' AND del<>1 ORDER BY date_start ASC LIMIT 0,1";

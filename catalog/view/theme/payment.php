@@ -62,6 +62,7 @@
             })
             .done(function(json) {
                 if(json.result){
+                    window.location='<?php echo route('home/live&id='.$id_content);?>';
                     $('.member-2').css('display','none');
                     $('.member-3').css('display','block');
                     $('#tab-index3').addClass('active');

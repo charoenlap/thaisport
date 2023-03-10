@@ -60,7 +60,7 @@
             return $result->row;
         }
         public function getTotalPayment($data=array()){
-            $where = " WHERE gs_callback.id <> '' AND (gs_callback.package_id>0)";
+            $where = " WHERE gs_callback.id <> ''";
             // var_dump($data);
             if($data['year']){
                 $where .= " AND YEAR(gs_callback.create_date) = '".$data['year']."'";
@@ -76,7 +76,8 @@
             if($data['day']){
                 $where .= " AND DAY(gs_callback.create_date) = '".$data['day']."'";
             }
-            $sql = "SELECT *,gs_callback.create_date AS create_date FROM gs_callback 
+            echo $sql = "SELECT *,gs_callback.create_date AS create_date FROM gs_callback 
+            INNER JOIN gs_member_payment ON gs_callback.billPaymentRef1 COLLATE utf8_unicode_ci = gs_member_payment.billPaymentRef1 COLLATE utf8_unicode_ci
             LEFT JOIN gs_member ON gs_member.id = gs_callback.user_id 
             LEFT JOIN gs_content_sub ON gs_callback.id_content = gs_content_sub.id ".$where;
             $query = $this->query($sql); 
