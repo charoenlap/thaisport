@@ -235,34 +235,34 @@
         }
         public function insertMember($data=array()){
             $result = '';
-            $username = (isset($data['username'])?$data['username']:'');
-            $password = (isset($data['password'])?$data['password']:'');
-            $ref = (isset($data['ref'])?$data['ref']:'');
+            $username   = (isset($data['username'])?$data['username']:'');
+            $password   = (isset($data['password'])?$data['password']:'');
+            $ref        = (isset($data['ref'])?$data['ref']:'');
 
             $username = $this->escape($username);
             $sql_member     = "SELECT * FROM gs_member WHERE username = '".$username."'";
             $result_member  = $this->query($sql_member);
             if($result_member->num_rows == 0){
-                if($ref){
+                // if($ref){
                    
-                    $sql_ref     = "SELECT * FROM gs_member WHERE username = '".$ref."'";
-                    $result_ref  = $this->query($sql_ref);
-                    if($result_ref->num_rows){
-                        // var_dump($result_ref->row['id']);exit();
-                        $result_check_vip = $this->checkActiveVIP($result_ref->row['id']);
+                //     $sql_ref     = "SELECT * FROM gs_member WHERE username = '".$ref."'";
+                //     $result_ref  = $this->query($sql_ref);
+                //     if($result_ref->num_rows){
+                //         // var_dump($result_ref->row['id']);exit();
+                //         $result_check_vip = $this->checkActiveVIP($result_ref->row['id']);
                         
-                        if($result_check_vip['data']['days']>0){
-                            $ref_id = $result_ref->row['id'];
-                        }
-                        // var_dump($ref_id);exit();
-                    }
+                //         if($result_check_vip['data']['days']>0){
+                //             $ref_id = $result_ref->row['id'];
+                //         }
+                //         // var_dump($ref_id);exit();
+                //     }
                     
-                }
+                // }
                 $insert = array(
                     'username'      => $username,
                     'password'      => $password,
                     'date_create'   => date('Y-m-d H:i:s'),
-                    'ref_id'        => $ref_id
+                    'ref_id'        => $ref
                 );
                 $result = $this->insert("member",$insert); 
             }else{

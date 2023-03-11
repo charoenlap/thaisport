@@ -344,8 +344,9 @@
 					if($password == $cPassword){
 						// echo $ref;exit();
 						$ref = $this->getSession('ref');
-						// echo $ref;exit();
+						
 						$result_ref = $this->model('master')->getMemberID(array('username'=>$ref));
+						// echo $result_ref['id'];exit();
 						$insert = array(
 							'username' 	=> $phone,
 							'password' 	=> md5($password),

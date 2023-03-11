@@ -20,6 +20,25 @@
                   "default": "true"
             }
             ]);
+            function update_user_activity()
+            {
+            var action = 'update_time';
+            $.ajax({
+            url:"index.php?route=member/updateOnline",
+            method:"POST",
+            dataType: 'json',
+            success:function(data)
+            {
+                if(data==0){
+                    window.location = 'index.php?route=member/logout';
+                }
+            }
+            });
+            }
+            setInterval(function(){ 
+            update_user_activity();
+            console.log('1')
+            }, 3000);
             </script>
         </div>
     </div>
