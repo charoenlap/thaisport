@@ -92,25 +92,44 @@
 </main>
 */ ?>
 <script> 
-var myVideo = document.getElementById("video1"); 
-setInterval(function () {btnplay.click();}, 2000); 
+function update_user_activity()
+{
+var action = 'update_time';
+$.ajax({
+url:"index.php?route=member/updateOnline",
+method:"POST",
+dataType: 'json',
+success:function(data)
+{
+    if(data==0){
+        window.location = 'index.php?route=member/logout';
+    }
+}
+});
+}
+setInterval(function(){ 
+update_user_activity();
+console.log('1')
+}, 3000);
+// var myVideo = document.getElementById("video1"); 
+// setInterval(function () {btnplay.click();}, 2000); 
 
-function playPause() { 
-  if (myVideo.paused) 
-    myVideo.play(); 
-  else 
-    myVideo.pause(); 
-} 
+// function playPause() { 
+//   if (myVideo.paused) 
+//     myVideo.play(); 
+//   else 
+//     myVideo.pause(); 
+// } 
 
-function makeBig() { 
-    myVideo.width = 560; 
-} 
+// function makeBig() { 
+//     myVideo.width = 560; 
+// } 
 
-function makeSmall() { 
-    myVideo.width = 320; 
-} 
+// function makeSmall() { 
+//     myVideo.width = 320; 
+// } 
 
-function makeNormal() { 
-    myVideo.width = 420; 
-} 
+// function makeNormal() { 
+//     myVideo.width = 420; 
+// } 
 </script> 
