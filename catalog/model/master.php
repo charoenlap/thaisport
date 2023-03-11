@@ -135,7 +135,7 @@
             return $query->rows;
         }
         public function getListContentSub(){
-            $query = $this->query("SELECT * FROM gs_content_sub WHERE MONTH(date_start) >= MONTH(NOW()) AND DAY(date_start) >= DAY(NOW())  GROUP BY id_content ORDER BY gs_content_sub.id DESC"); 
+            $query = $this->query("SELECT * FROM gs_content_sub WHERE MONTH(date_start) >= MONTH(NOW()) AND DAY(date_start) >= DAY(NOW()) AND del<>1 GROUP BY id_content ORDER BY gs_content_sub.id DESC"); 
             return $query->rows;
         }
         public function getAllListContentSub(){
