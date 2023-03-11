@@ -109,7 +109,7 @@ success:function(data)
 }
 setInterval(function(){ 
 update_user_activity();
-console.log('1')
+// console.log('1')
 }, 3000);
 // var myVideo = document.getElementById("video1"); 
 // setInterval(function () {btnplay.click();}, 2000); 
