@@ -29,12 +29,12 @@
                             <img src="images/Logo Thaisport.png" alt="logo" class="dark">
                         </a>
                         <a class="nav-link first mobile" href="<?php echo route('home');?>">หน้าหลัก</a>
-                        <a class="nav-link mobile active-build" href="<?php echo route('home/live');?>">
+                        <a class="nav-link mobile active-build" href="<?php echo $link_live;?>">
                              ถ่ายทอดสด
                         </a>
                         
                         <?php if($username){ ?>
-                            <a class="nav-link mobile" href="<?php echo route('member/login');?>"><?php echo mb_strimwidth($username,0,10,'..','utf8'); ?></a>
+                            <a class="nav-link mobile" href="<?php echo route('member/historyPayment');?>"><?php echo mb_strimwidth($username,0,10,'..','utf8'); ?></a>
                         <?php }else{?>
                             <a class="nav-link mobile" href="<?php echo route('member/login');?>">สมาชิก</a>
                         <?php } ?>
