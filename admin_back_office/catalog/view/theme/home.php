@@ -9,9 +9,9 @@
           <div class="col-2">
             <label for="">ปี</label>
             <select name="year" id="year" class="form-control">
-              <?php for($i=2022;$i<=2022;$i++){?>
-              <option value="<?php echo $i;?>" <?php echo ($i==$year?'selected':'')?>><?php echo $i;?></option>
-              <?php } ?>
+              <?php //for(date('Y');$i<=date('Y');$i++){?>
+              <option value="<?php echo date('Y');?>" <?php echo (date('Y')==$year?'selected':'')?>><?php echo date('Y');?></option>
+              <?php //} ?>
             </select>
           </div>
           <div class="col-2">
@@ -39,6 +39,7 @@
       </div>
     </div>
   </form>
+  <?php // echo "<pre>";var_dump($result);?>
   <div class="row mt-2">
     <div class="col-12">
       <table class="table table-striped" id="table_id">
@@ -55,7 +56,7 @@
 	      			<td><?php echo $val['payerName'];?></td>
 	      			<td><?php echo $val['amount'];?></td>
               <td><?php echo $val['username'];?></td>
-	      			<td><?php echo ($val['amount']=="99"?$val['title']:'');?></td>
+	      			<td><?php echo $val['title'];?></td>
 	      			<td><?php echo $val['create_date'];?></td>
 	      		</tr>
 	      	<?php } ?>

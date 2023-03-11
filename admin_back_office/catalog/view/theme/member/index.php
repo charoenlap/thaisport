@@ -72,6 +72,7 @@
 			.done(function() {
 				console.log("success");
 				tr.remove();
+				window.location='index.php?route=member';
 			})
 			.fail(function() {
 				console.log("error");

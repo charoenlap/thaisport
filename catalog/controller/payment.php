@@ -76,6 +76,7 @@
 				'billPaymentRef1' 	=> $json_obj->referenceNo,
 				'billPaymentRef2' 	=> $json_obj->gbpReferenceNo,
 				'confirmId' 		=> $json_obj->resultCode,
+				'amount'			=> $json_obj->amount,
 				'create_date'		=> date('Y-m-d H:i:s')
 			);
 			$callback = $this->model('qr')->insertCallback($data_qr);

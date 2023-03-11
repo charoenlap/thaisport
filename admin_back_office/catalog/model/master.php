@@ -78,8 +78,8 @@
             }
             $sql = "SELECT *,gs_callback.create_date AS create_date FROM gs_callback 
             INNER JOIN gs_member_payment ON gs_callback.billPaymentRef1 COLLATE utf8_unicode_ci = gs_member_payment.billPaymentRef1 COLLATE utf8_unicode_ci
-            LEFT JOIN gs_member ON gs_member.id = gs_callback.user_id 
-            LEFT JOIN gs_content_sub ON gs_callback.id_content = gs_content_sub.id ".$where;
+            LEFT JOIN gs_member ON gs_member.id = gs_member_payment.user_id 
+            LEFT JOIN gs_content_sub ON gs_member_payment.id_content = gs_content_sub.id ".$where;
             $query = $this->query($sql); 
             return $query->rows;
         }
@@ -104,8 +104,9 @@
             MONTH(gs_callback.create_date) AS Gmonth,
             YEAR(gs_callback.create_date) AS Gyear 
             FROM gs_callback 
-            LEFT JOIN gs_member ON gs_member.id = gs_callback.user_id 
-            LEFT JOIN gs_content_sub ON gs_callback.id_content = gs_content_sub.id ".$where."
+            INNER JOIN gs_member_payment ON gs_callback.billPaymentRef1 COLLATE utf8_unicode_ci = gs_member_payment.billPaymentRef1 COLLATE utf8_unicode_ci
+            LEFT JOIN gs_member ON gs_member.id = gs_member_payment.user_id 
+            LEFT JOIN gs_content_sub ON gs_member_payment.id_content = gs_content_sub.id ".$where."
             GROUP BY Gmonth
             ";
             $query = $this->query($sql); 
@@ -154,7 +155,7 @@
             return $query;
         }
         public function listMember(){
-            $query = $this->query("SELECT * FROM gs_member ORDER BY id DESC"); 
+            $query = $this->query("SELECT * FROM gs_member WHERE del<>1 ORDER BY id DESC"); 
             return $query->rows;
         }
         public function insertMember($data=array()){

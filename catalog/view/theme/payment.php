@@ -30,6 +30,8 @@
                             <form action="#">
                                 <div class="form-group button-block text-center">
                                   <button class="" id="btn-next-step-2" disabled="disabled">กำลังตรวจสอบรายการ</button>
+                                  <br>
+                                  <p ><a href="<?php echo route('payment&id_content='.$id_content);?>">กลับ</a></p>
                                 </div>
                                 
                             </form>
