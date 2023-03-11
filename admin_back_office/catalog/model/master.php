@@ -76,7 +76,7 @@
             if($data['day']){
                 $where .= " AND DAY(gs_callback.create_date) = '".$data['day']."'";
             }
-            echo $sql = "SELECT *,gs_callback.create_date AS create_date FROM gs_callback 
+            $sql = "SELECT *,gs_callback.create_date AS create_date FROM gs_callback 
             INNER JOIN gs_member_payment ON gs_callback.billPaymentRef1 COLLATE utf8_unicode_ci = gs_member_payment.billPaymentRef1 COLLATE utf8_unicode_ci
             LEFT JOIN gs_member ON gs_member.id = gs_callback.user_id 
             LEFT JOIN gs_content_sub ON gs_callback.id_content = gs_content_sub.id ".$where;
