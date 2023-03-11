@@ -67,7 +67,7 @@
   </div>
   <div class="row mt-2">
     <div class="col-6">
-      <div id="curve_chart" style="width: 100%; height: 500px"></div>
+      <!-- <div id="curve_chart" style="width: 100%; height: 500px"></div> -->
     </div>
   </div>
 </div>
