@@ -25,7 +25,7 @@
 			$request_headers = array(
 				"Cache-Control: no-cache",
 			);
-			$itemamount = 1;
+			$itemamount = 0.1;
 			if( !empty( $itemamount ) ) {
 				$env = "https://api.gbprimepay.com/";
 
