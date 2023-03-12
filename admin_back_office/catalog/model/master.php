@@ -211,7 +211,7 @@
         public function reset($id=0){
             $password = rand(1000,9999);
             $query = $this->update("member",array('password'=>md5($password)),"id = '".(int)$id."'"); 
-            return array('password'=>$password);
+            return array('password'=>$password); 
         }
         public function getKai(){
             $query = $this->query("SELECT * FROM gs_content WHERE del<>1"); 

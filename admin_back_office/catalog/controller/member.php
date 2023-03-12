@@ -119,7 +119,7 @@
 	    }
 	    public function reset() {
 	    	$data = array();
-	    	$id_user = $this->getSession('user_id');
+	    	$id_user = $this->getSession('user_id'); 
 	    	if($id_user){
 		    	$id = get('id'); 
 		    	$result = $this->model('master')->reset($id);
