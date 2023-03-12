@@ -102,9 +102,9 @@
 		        $arrayHeader[] = "resourceOwnerId: ".$api_key;
 		        $ref1 = strtoupper($ref1);
 				$ref2 = strtoupper($ref2);
-				if($id_user==4 or $id_user==189){
-					$amount=1;
-				}
+				// if($id_user==4 or $id_user==189){
+				// 	$amount=1;
+				// }
 		        $post_qrcode = [
 		                'qrType'            => 'PP', 
 		                'ppType'            => 'BILLERID', 
