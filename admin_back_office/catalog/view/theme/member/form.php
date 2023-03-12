@@ -45,9 +45,15 @@
 				List Agency
 			</div>
 			<div class="col-10">
-				<table class="table">
+				<table class="table" id="table_id">
+				<thead>
+					<th>Agency</th>
+					<th>Username</th>
+				</thead>
+				<tbody>
 					<?php foreach($agency_list as $val){?>
 					<tr>
+						<td><?php echo (isset($detail['username'])?$detail['username']:'');?></td>
 						<td><?php echo $val['username'];?></td>
 					</tr>
 					<?php } ?>
@@ -192,3 +198,28 @@
 		
 	});
 </script>	
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+<script>
+	$(document).ready( function () {
+    $('#table_id').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+    } );
+} );
+</script>
+<script>
+	$(document).ready( function () {
+    	$('#table_id').DataTable({
+			"pageLength": 50
+		});
+	});
