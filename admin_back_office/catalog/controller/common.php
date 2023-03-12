@@ -9,7 +9,7 @@
 	    public function footer($data=array()){
 	    	$this->render('common/footer',$data);
 	    }
-	    public function logout($data=array()){
+	    public function logout($data=array()){ 
 	    	$this->redirect('home',$data);
 	    }
 	}
