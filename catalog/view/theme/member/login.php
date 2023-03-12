@@ -31,7 +31,7 @@
                         <?php } ?>
                         <div class="row">
                             <div class="col-xs-6 col-md-6">
-                                <a href="<?php echo route('member/register'.($id_content?'&id_content'.$id_content:''));?>" class="btn btn-motive">สมัครสมาชิก</a>
+                                <a href="<?php echo route('member/register'.($id_content?'&id_content='.$id_content:''));?>" class="btn btn-motive">สมัครสมาชิก</a>
                             </div>
                             <div class="col-xs-6 col-md-6 text-right">
                                 <a href="<?php echo route('member/forgot');?>" class="btn ">ลืมรหัสผ่าน</a>

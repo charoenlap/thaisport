@@ -55,7 +55,7 @@
       </li>
       
       
-      <!-- <li class="nav-item dropdown">
+      <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           แพคเกจ
         </a>
@@ -64,7 +64,7 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="<?php echo route('package/add'); ?>">เพิ่ม</a>
         </div>
-      </li> -->
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           สมาชิก

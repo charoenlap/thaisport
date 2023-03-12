@@ -318,6 +318,7 @@
 	    	$data['redirect'] = get('redirect');
 	    	$data['detail']   = get('detail');
 	    	$data['ref'] =	$ref  = (get('ref')?decode(get('ref'),'lap'):'');
+			$data['id_content'] = get('id_content');
 	    	// echo get('ref');
 	    	// echo $ref.'<<';exit();
 	    	if($ref){
@@ -334,11 +335,17 @@
 	    	$data = array();
 	    	$result = "failed";
 	    	$detail = "";
+			$id_content = get('id_content');
 	    	if(method_post()){
 	    		$phone 		= post('phone');
 				$password 	= post('password');
 				$cPassword 	= post('cPassword');
 				$redirect 	= post('redirect');
+				$id_content = post('id_content');
+				if($id_content){
+					$redirect = "home/live&id=".$id_content;
+				}
+				// echo $redirect;exit();
 				$ref = '';
 				if(!empty($password)){
 					if($password == $cPassword){
@@ -354,13 +361,13 @@
 						);
 						$result_user = $this->model('master')->insertMember($insert);
 						if($result_user){
-							if($redirect){
-								redirect($redirect);
-							}else{
 								$this->setSession('id_user',$result_user);
 								$this->setSession('username',$phone);
-								redirect('home');
-							}
+								// if($redirect){
+								// 	redirect($redirect);
+								// }else{
+									redirect('home');
+								// }
 						}else{
 							$detail = "มีในระบบแล้ว";
 							redirect('member/register&result='.$result.'&detail='.$detail);

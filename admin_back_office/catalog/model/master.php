@@ -79,7 +79,7 @@
             $sql = "SELECT *,gs_callback.create_date AS create_date FROM gs_callback 
             INNER JOIN gs_member_payment ON gs_callback.billPaymentRef1 COLLATE utf8_unicode_ci = gs_member_payment.billPaymentRef1 COLLATE utf8_unicode_ci
             LEFT JOIN gs_member ON gs_member.id = gs_member_payment.user_id 
-            LEFT JOIN gs_content_sub ON gs_member_payment.id_content = gs_content_sub.id ".$where;
+            LEFT JOIN gs_content_sub ON gs_member_payment.id_content = gs_content_sub.id ".$where.' ORDER BY gs_member_payment.id_conten ASC';
             $query = $this->query($sql); 
             return $query->rows;
         }

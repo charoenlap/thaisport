@@ -15,13 +15,16 @@
     <div class="faq-page">
         <div class="container">
             <?php if($blog['cover']){?>
-            <div class="row justify-content-center">
-                <div class="col-sm-12">
-                    <div class="text-center">
-                        <img src="uploads/content/<?php echo $blog['cover'];?>" alt="image" class="img-fluid">
+                <?php if(empty($blog['cover'])){?>
+                <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <div class="text-center">
+                            <img src="uploads/content/<?php echo $blog['cover'];?>" alt="image" class="img-fluid">
+                        </div>
+                        
                     </div>
                 </div>
-            </div>
+                <?php } ?>
             <?php } ?>
             <div class="row justify-content-center">
                 <div class="col-sm-12">

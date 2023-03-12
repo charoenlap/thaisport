@@ -19,6 +19,7 @@
 				$date_expired = $result_content->row['date_start'];
 				$data_his = array(
 					'id_user' => $id_user,
+					'id_package' => 2,
 					'id_content' => $id_content,
 					'date_expired' => $date_expired
 				);

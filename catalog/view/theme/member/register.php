@@ -12,6 +12,7 @@
                     <?php } ?>
                     <form action="<?php echo $action; ?>" method="POST" >
                         <input type="hidden" name="redirect" value="<?php echo $redirect; ?>">
+                        <input type="hidden" name="id_content" value="<?php echo $id_content; ?>">
                         <div class="form-group">
                             <input type="text" placeholder="เบอร์มือถือ" id="phone" name="phone" required="required" class="form-control">
                             <label for="name" class="sr-only">เบอร์มือถือ</label>

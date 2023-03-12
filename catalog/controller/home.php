@@ -43,7 +43,7 @@
 			$id_content = (int)get('id');
 			if(!empty($id_user) AND !empty($username)){
 				$checkActive = $this->model('master')->checkActiveContent($id_user,$id_content);
-				$checkActive = true;
+				// $checkActive = true;
 				// var_dump($checkActive);exit();
 				if($checkActive){
 					$data['title'] = "";

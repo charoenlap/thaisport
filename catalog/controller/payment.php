@@ -64,7 +64,7 @@
 			$json_obj = json_decode($json_str);
 
 			$user_id = '';
-			$package_id = '';
+			$package_id = 2;
 			$id_content = '';
 
 			$filename = time().rand(01,99);

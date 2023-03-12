@@ -55,7 +55,9 @@
 </script>
 <script>
 	$(document).ready( function () {
-    $('#table_id').DataTable();
+    $('#table_id').DataTable({
+		"pageLength": 50
+	});
 } );
 	$(document).on('click','.btn-del',function(e){
 		if (confirm("ยืนยันการลบ!") == true) {
