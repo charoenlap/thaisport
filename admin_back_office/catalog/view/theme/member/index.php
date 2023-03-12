@@ -98,7 +98,10 @@
 			.done(function(data) {
 				alert('ระบบได้รีเซตรหัสผ่านเป็น'+data.password);
 			})
-			.fail(function() {
+			.fail(function(a,b,c) {
+				console.log(a);
+				console.log(b);
+				console.log(c);
 				console.log("error");
 			})
 			.always(function() {
